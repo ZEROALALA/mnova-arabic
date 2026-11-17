@@ -19,6 +19,7 @@
 * **دليل مكتبة التعريبات:** https://mnova-arabic.netlify.app/games/
 * **قناة اليوتيوب الرسمية:** https://www.youtube.com/@MNOVA_Arabic
 * **فيديو استعراض NARAKA: BLADEPOINT (2K60):** https://www.youtube.com/watch?v=EAxnnBAkZHE
+* **فيديو استعراض وشرح تعريب Steam:** https://www.youtube.com/watch?v=GLY4n7OfQ-I
 * **متجر itch.io (الشراء وتملّك الحقوق):** https://m-amin-alobidan.itch.io
 
 ---
