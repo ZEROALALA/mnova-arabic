@@ -1,0 +1,145 @@
+{
+  "_تعليمات_سريعة": "استبدل النصوص الموجودة بين علامتي التنصيص فقط ثم احفظ الملف. لا تغيّر أسماء المفاتيح باللغة الإنجليزية.",
+  "site": {
+    "title": "MNOVA | مركز تحميل تعريبات مينوفا",
+    "shortName": "MNOVA",
+    "heroTitle": "العب وتصفّح بلغتك.",
+    "heroLead": "مشروع MNOVA يقدّم أقوى تعريبات الألعاب الأونلاين والقصص ومنصة Steam — مجاناً 100% للعب الشخصي عبر الإعلانات، أو بالشراء المباشر مع تنازل كامل عن الحقوق وتملّك للملفات.",
+    "youtubeUrl": "https://www.youtube.com/@MNOVA_Arabic",
+    "discordUrl": "",
+    "telegramUrl": "",
+    "xUrl": ""
+  },
+  "donations": {
+    "itchIoProfileUrl": "https://m-amin-alobidan.itch.io",
+    "itchIoNote": "تحميل مباشر سريع بدون إعلانات ($5 لتعريب NARAKA: BLADEPOINT الأونلاين و $2 لبقية التعريبات) — عند الشراء بالمال يتنازل فريق MNOVA عن جميع حقوقه في ملفات التعريب لتصبح مِلكاً للمشتري بحرية كاملة (بينما التحميل عبر LootLabs مجاني 100% للعب الشخصي).",
+    "turkishIban": {
+      "enabled": true,
+      "bankName": "Yapı Kredi Bankası",
+      "accountHolder": "M- AMIN ALOBIDAN",
+      "iban": "TR79 0006 7010 0000 0416 1173 27",
+      "note": "للمتابعين داخل تركيا — التحويل الفوري عبر FAST / Havale / EFT (الشراء المباشر بالمال يمنح المشتري تنازلاً كاملاً عن حقوق ملفات التعريب لتصبح مِلكه)."
+    }
+  },
+  "nextgenLauncher": {
+    "enabled": true,
+    "launcherName": "NextGen Launcher",
+    "downloadUrl": "https://m-amin-alobidan.itch.io/nextgen-launcher",
+    "supporterBadgeText": "الداعمون يحصلون قريباً على ميزة التحميل المباشر السريع بدون إعلانات داخل برنامج NextGen Launcher."
+  },
+  "ads": {
+    "enabled": true,
+    "freeDownloadMode": "lootlabs",
+    "waitSeconds": 15,
+    "adblockDetector": {
+      "enabled": true,
+      "blockSite": true,
+      "title": "تم اكتشاف مانع إعلانات (AdBlock)",
+      "message": "تُقدَّم تعريبات فريق MNOVA مجاناً للجميع بتمويل من الإعلانات. يُرجى إيقاف مانع الإعلانات أو إضافة الموقع إلى القائمة البيضاء لتتمكن من الدخول وتحميل التعريبات."
+    },
+    "lootlabsInApp": {
+      "enabled": false,
+      "tagId": "",
+      "scriptUrl": "https://creators.lootlabs.gg/in-app-sdk.js"
+    },
+    "adsterra": {
+      "enabled": true,
+      "socialBarSrc": "https://bellnewyork.org/14/8d257805496056c522bab0add6d32129",
+      "popunderSrc": ""
+    },
+    "monetag": {
+      "enabled": false,
+      "multiTagSrc": "",
+      "zoneId": "",
+      "directSmartLink": ""
+    },
+    "slots": {
+      "catalogBannerHtml": "<script>atOptions={'key':'3d62ebad6f52506f3f2110d48d81b18b','format':'iframe','height':90,'width':728,'params':{}};</script><script src=\"https://bellnewyork.org/22/3d62ebad6f52506f3f2110d48d81b18b\"></script>",
+      "modalWaitBannerHtml": "",
+      "cornerLeftHtml": "<script>atOptions={'key':'9e2af39d1feff4a3e602b7555f863832','format':'iframe','height':300,'width':160,'params':{}};</script><script src=\"https://bellnewyork.org/22/9e2af39d1feff4a3e602b7555f863832\"></script>",
+      "cornerRightHtml": "",
+      "floatingBarHtml": "<script>atOptions={'key':'cf316cdb6243954231223b2cb1172291','format':'iframe','height':50,'width':320,'params':{}};</script><script src=\"https://bellnewyork.org/22/cf316cdb6243954231223b2cb1172291\"></script>"
+    }
+  },
+  "games": {
+    "naraka": {
+      "name": "NARAKA: BLADEPOINT (ناراكا: بليد بوينت — أونلاين)",
+      "lootlabsUrl": "https://loot-link.com/s?zRIEpAsb",
+      "directDriveUrl": "https://drive.google.com/file/d/1dqzEbLV-3JxbmLgYu5pyiDHveCOjcztC/view?usp=drivesdk",
+      "itchioUrl": "https://m-amin-alobidan.itch.io/naraka-arabic",
+      "directSupporterUrl": "",
+      "youtubeVideoUrl": "https://www.youtube.com/watch?v=EAxnnBAkZHE",
+      "priceUsd": 5,
+      "status": "ongoing",
+      "version": "1.0 مستمر (362,699+ نص معرّب + محرك تحديث أونلاين)",
+      "size": "172.6 MB",
+      "localZip": "downloads/Minova_Naraka_Bladepoint_Arabic_v1.0.zip"
+    },
+    "exnatura": {
+      "name": "Ex Natura: Nature Corrupted (إكس ناتورا: الطبيعة الفاسدة)",
+      "lootlabsUrl": "https://loot-link.com/s?typJ8L1j",
+      "directDriveUrl": "https://drive.google.com/file/d/1AXhscI1g42B4oStuwFTucnE8onM2LtlF/view?usp=drivesdk",
+      "itchioUrl": "https://m-amin-alobidan.itch.io/ex-natura-arabic",
+      "directSupporterUrl": "",
+      "youtubeVideoUrl": "",
+      "priceUsd": 2,
+      "status": "done",
+      "version": "1.0 كامل + تحسين أداء",
+      "size": "183.9 MB",
+      "localZip": "downloads/Minova_Ex_Natura_Arabic_v1.0.zip"
+    },
+    "nwtd": {
+      "name": "Nobody Wants to Die (لا أحد يريد أن يموت)",
+      "lootlabsUrl": "https://lootdest.org/s?HB2yrhVM",
+      "directDriveUrl": "https://drive.google.com/file/d/1J3qde3fgX4foN_jGv53w1f1Nq28jDcQe/view?usp=drivesdk",
+      "itchioUrl": "https://m-amin-alobidan.itch.io/nobody-wants-to-die-arabic",
+      "directSupporterUrl": "",
+      "youtubeVideoUrl": "",
+      "priceUsd": 2,
+      "status": "done",
+      "version": "1.0 كامل",
+      "size": "209.7 MB",
+      "localZip": "downloads/Minova_Nobody_Wants_to_Die_Arabic_v1.0.zip"
+    },
+    "pale_beyond": {
+      "name": "The Pale Beyond (ما وراء الشحوب)",
+      "lootlabsUrl": "https://lootdest.org/s?aWcSLdpj",
+      "directDriveUrl": "https://drive.google.com/file/d/1t7dUZJHMbo5WJWBdEiYNUu6rX8THzsry/view?usp=drivesdk",
+      "itchioUrl": "https://m-amin-alobidan.itch.io/the-pale-beyond-arabic",
+      "directSupporterUrl": "",
+      "youtubeVideoUrl": "",
+      "priceUsd": 2,
+      "status": "done",
+      "version": "1.0 كامل",
+      "size": "19.3 MB",
+      "localZip": "downloads/Minova_The_Pale_Beyond_Arabic_v1.0.zip"
+    },
+    "jedi": {
+      "name": "Star Wars Jedi: Fallen Order (حرب النجوم: جيدي)",
+      "lootlabsUrl": "https://loot-link.com/s?aMdqYdUm",
+      "directDriveUrl": "https://drive.google.com/file/d/1BWIu2EHoofCkZ87UrfWgZgiERrHboioF/view?usp=drivesdk",
+      "itchioUrl": "https://m-amin-alobidan.itch.io/jedi-fallen-order-arabic",
+      "directSupporterUrl": "",
+      "youtubeVideoUrl": "",
+      "priceUsd": 2,
+      "status": "done",
+      "version": "1.0 كامل",
+      "size": "11.4 MB",
+      "localZip": "downloads/Minova_StarWars_Jedi_Arabic_v1.0.zip"
+    },
+    "steam": {
+      "name": "Steam Client Arabic (تعريب منصة ستيم)",
+      "lootlabsUrl": "https://lootdest.org/s?2lDnErcN",
+      "directDriveUrl": "https://drive.google.com/file/d/1JNufCQ43QPjYyIjeOhLSsB87C797YolZ/view?usp=drivesdk",
+      "itchioUrl": "https://m-amin-alobidan.itch.io/steam-arabic",
+      "directSupporterUrl": "",
+      "youtubeVideoUrl": "",
+      "priceUsd": 2,
+      "status": "ongoing",
+      "version": "1.0 مستمر",
+      "size": "0.8 MB",
+      "localZip": "downloads/Minova_Steam_Arabic_v1.0.zip"
+    }
+  },
+  "customGames": []
+}

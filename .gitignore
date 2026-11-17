@@ -1,0 +1,6 @@
+.netlify/
+*.zip
+*.mp4
+*.log
+.DS_Store
+Thumbs.db

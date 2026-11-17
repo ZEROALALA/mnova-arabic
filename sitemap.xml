@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://mnova-arabic.netlify.app/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://mnova-arabic.netlify.app/assets/mnova-og-banner.jpg</image:loc>
+      <image:title>MNOVA للتعريب — مركز تحميل تعريبات الألعاب ومنصة Steam</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mnova-arabic.netlify.app/games/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
+    <image:image>
+      <image:loc>https://mnova-arabic.netlify.app/assets/mnova-og-banner.jpg</image:loc>
+      <image:title>مكتبة تعريبات ألعاب PC ومنصة Steam بالعربي — MNOVA</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mnova-arabic.netlify.app/games/naraka-bladepoint-arabic/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://mnova-arabic.netlify.app/assets/covers/naraka.jpg</image:loc>
+      <image:title>تعريب لعبة NARAKA: BLADEPOINT (ناراكا بليد بوينت) بالعربي | MNOVA للتعريب</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mnova-arabic.netlify.app/games/ex-natura-arabic/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://mnova-arabic.netlify.app/assets/covers/exnatura.jpg</image:loc>
+      <image:title>تعريب لعبة Ex Natura: Nature Corrupted (إكس ناتورا) بالعربي | MNOVA للتعريب</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mnova-arabic.netlify.app/games/nobody-wants-to-die-arabic/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://mnova-arabic.netlify.app/assets/covers/nwtd.jpg</image:loc>
+      <image:title>تعريب لعبة Nobody Wants to Die (لا أحد يريد أن يموت) بالعربي | MNOVA للتعريب</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mnova-arabic.netlify.app/games/jedi-fallen-order-arabic/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://mnova-arabic.netlify.app/assets/covers/jedi.jpg</image:loc>
+      <image:title>تعريب لعبة Star Wars Jedi: Fallen Order (حرب النجوم جيدي) بالعربي | MNOVA للتعريب</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mnova-arabic.netlify.app/games/the-pale-beyond-arabic/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://mnova-arabic.netlify.app/assets/covers/pale_beyond.jpg</image:loc>
+      <image:title>تعريب لعبة The Pale Beyond (ما وراء الشحوب) بالعربي | MNOVA للتعريب</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://mnova-arabic.netlify.app/games/steam-arabic/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://mnova-arabic.netlify.app/assets/covers/steam.jpg</image:loc>
+      <image:title>تعريب برنامج Steam (منصة ستيم) باللغة العربية الكاملة | MNOVA للتعريب</image:title>
+    </image:image>
+  </url>
+</urlset>

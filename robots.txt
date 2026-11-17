@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mnova-arabic.netlify.app/sitemap.xml
