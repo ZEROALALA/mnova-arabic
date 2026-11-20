@@ -24,11 +24,12 @@
 
 ---
 
-## 🎯 مكتبة التعريبات المتوفرة الآن (6 مشاريع)
+## 🎯 مكتبة التعريبات المتوفرة الآن (7 مشاريع)
 
 | اللعبة / المنصة | الحالة | الحجم | صفحة الشرح والتحميل المباشر (SEO) | التحميل المجاني (LootLabs) | شراء وتنازل الحقوق (itch.io) |
 | :--- | :--- | :---: | :--- | :---: | :---: |
 | **NARAKA: BLADEPOINT** *(ناراكا: بليد بوينت — أونلاين)* | 🔄 مستمر (`362,699+` نص) | `172.6 MB` | [صفحة تعريب ناراكا](https://mnova-arabic.netlify.app/games/naraka-bladepoint-arabic/) | [تحميل مجاني ⚡](https://loot-link.com/s?zRIEpAsb) | [شراء `$5` 💎](https://m-amin-alobidan.itch.io/naraka-arabic) |
+| **MONGIL: STAR DIVE** *(مونجيل: غوص النجوم — Epic / Netmarble)* | ✅ مكتمل 100% | `14.0 MB` | [صفحة تعريب MONGIL: STAR DIVE](https://mnova-arabic.netlify.app/games/mongil-star-dive-arabic/) | عبر الموقع ⚡ | شراء `$3` 💎 *(itch.io / IBAN)* |
 | **Nobody Wants to Die** *(لا أحد يريد أن يموت — UE5)* | ✅ مكتمل 100% | `209.7 MB` | [صفحة Nobody Wants to Die](https://mnova-arabic.netlify.app/games/nobody-wants-to-die-arabic/) | [تحميل مجاني ⚡](https://lootdest.org/s?HB2yrhVM) | [شراء `$2` 💎](https://m-amin-alobidan.itch.io/nobody-wants-to-die-arabic) |
 | **Steam Client Arabic** *(تعريب منصة ستيم لنظام Windows)* | 🔄 مستمر (دعم RTL) | `0.8 MB` | [صفحة تعريب ستيم](https://mnova-arabic.netlify.app/games/steam-arabic/) | [تحميل مجاني ⚡](https://lootdest.org/s?2lDnErcN) | [شراء `$2` 💎](https://m-amin-alobidan.itch.io/steam-arabic) |
 | **Ex Natura: Nature Corrupted** *(إكس ناتورا: الطبيعة الفاسدة)* | ✅ مكتمل 100% | `183.9 MB` | [صفحة Ex Natura](https://mnova-arabic.netlify.app/games/ex-natura-arabic/) | [تحميل مجاني ⚡](https://loot-link.com/s?typJ8L1j) | [شراء `$2` 💎](https://m-amin-alobidan.itch.io/ex-natura-arabic) |

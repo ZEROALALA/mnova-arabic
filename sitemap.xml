@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://mnova-arabic.netlify.app/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>https://mnova-arabic.netlify.app/games/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -23,7 +23,7 @@
   </url>
   <url>
     <loc>https://mnova-arabic.netlify.app/games/naraka-bladepoint-arabic/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -32,8 +32,18 @@
     </image:image>
   </url>
   <url>
+    <loc>https://mnova-arabic.netlify.app/games/mongil-star-dive-arabic/</loc>
+    <lastmod>2026-11-20</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://mnova-arabic.netlify.app/assets/covers/mongil.jpg</image:loc>
+      <image:title>تعريب لعبة MONGIL: STAR DIVE (مونجيل: غوص النجوم) بالعربي | MNOVA للتعريب</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://mnova-arabic.netlify.app/games/ex-natura-arabic/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -43,7 +53,7 @@
   </url>
   <url>
     <loc>https://mnova-arabic.netlify.app/games/nobody-wants-to-die-arabic/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -53,7 +63,7 @@
   </url>
   <url>
     <loc>https://mnova-arabic.netlify.app/games/jedi-fallen-order-arabic/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -63,7 +73,7 @@
   </url>
   <url>
     <loc>https://mnova-arabic.netlify.app/games/the-pale-beyond-arabic/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -73,7 +83,7 @@
   </url>
   <url>
     <loc>https://mnova-arabic.netlify.app/games/steam-arabic/</loc>
-    <lastmod>2026-11-17</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>

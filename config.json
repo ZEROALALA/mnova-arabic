@@ -12,7 +12,7 @@
   },
   "donations": {
     "itchIoProfileUrl": "https://m-amin-alobidan.itch.io",
-    "itchIoNote": "تحميل مباشر سريع بدون إعلانات ($5 لتعريب NARAKA: BLADEPOINT الأونلاين و $2 لبقية التعريبات) — عند الشراء بالمال يتنازل فريق MNOVA عن جميع حقوقه في ملفات التعريب لتصبح مِلكاً للمشتري بحرية كاملة (بينما التحميل عبر LootLabs مجاني 100% للعب الشخصي).",
+    "itchIoNote": "تحميل مباشر سريع بدون إعلانات ($5 لتعريب NARAKA: BLADEPOINT الأونلاين، $3 لتعريب MONGIL: STAR DIVE، و $2 لبقية التعريبات) — عند الشراء بالمال يتنازل فريق MNOVA عن جميع حقوقه في ملفات التعريب لتصبح مِلكاً للمشتري بحرية كاملة (بينما التحميل عبر LootLabs مجاني 100% للعب الشخصي).",
     "turkishIban": {
       "enabled": true,
       "bankName": "Yapı Kredi Bankası",
@@ -74,6 +74,19 @@
       "version": "1.0 مستمر (362,699+ نص معرّب + محرك تحديث أونلاين)",
       "size": "172.6 MB",
       "localZip": "downloads/Minova_Naraka_Bladepoint_Arabic_v1.0.zip"
+    },
+    "mongil": {
+      "name": "MONGIL: STAR DIVE (مونجيل: غوص النجوم)",
+      "lootlabsUrl": "",
+      "directDriveUrl": "",
+      "itchioUrl": "",
+      "directSupporterUrl": "",
+      "youtubeVideoUrl": "",
+      "priceUsd": 3,
+      "status": "done",
+      "version": "1.0 كامل + مثبت ذكي شامل لجميع اللابتوبات",
+      "size": "14.0 MB",
+      "localZip": "downloads/Minova_Mongil_Star_Dive_Arabic_v1.0.zip"
     },
     "exnatura": {
       "name": "Ex Natura: Nature Corrupted (إكس ناتورا: الطبيعة الفاسدة)",
