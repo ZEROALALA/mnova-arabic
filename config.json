@@ -1,5 +1,5 @@
 {
-  "_تعليمات_سريعة": "استبدل النصوص الموجودة بين علامتي التنصيص فقط ثم احفظ الملف. لا تغيّر أسماء المفاتيح باللغة الإنجليزية.",
+  "_تعليمات_سريعة": "استبدل النصوص الموجودة بين علامتي التنصيص فقط ثم احفظ الملف. لا تغيّر أسماء المفاتيح باللغة الإنجليزية. روابط Google Drive محفوظة محلياً في private_direct_drive_links.local.json لحماية أرباح الإعلانات والمبيعات.",
   "site": {
     "title": "MNOVA | مركز تحميل تعريبات مينوفا",
     "shortName": "MNOVA",
@@ -8,17 +8,33 @@
     "youtubeUrl": "https://www.youtube.com/@MNOVA_Arabic",
     "discordUrl": "",
     "telegramUrl": "",
-    "xUrl": ""
+    "xUrl": "",
+    "contactEmail": ""
+  },
+  "analytics": {
+    "cloudflareBeaconToken": "",
+    "clarityProjectId": ""
   },
   "donations": {
     "itchIoProfileUrl": "https://m-amin-alobidan.itch.io",
     "itchIoNote": "تحميل مباشر سريع بدون إعلانات ($5 لتعريب NARAKA: BLADEPOINT الأونلاين، $3 لتعريب MONGIL: STAR DIVE، و $2 لبقية التعريبات) — عند الشراء بالمال يتنازل فريق MNOVA عن جميع حقوقه في ملفات التعريب لتصبح مِلكاً للمشتري بحرية كاملة (بينما التحميل عبر LootLabs مجاني 100% للعب الشخصي).",
+    "bundle": {
+      "enabled": true,
+      "priceUsd": 9.99,
+      "regularTotalUsd": 18,
+      "itchBundleUrl": "https://m-amin-alobidan.itch.io",
+      "note": "اطلب أو اشترِ باقة جميع تعريبات MNOVA الـ 7 دفعة واحدة بسعر موفّر ($9.99 بدلاً من $18) شاملة التنازل الكامل عن الحقوق."
+    },
+    "commissions": {
+      "enabled": true,
+      "startingPriceUsd": 25
+    },
     "turkishIban": {
       "enabled": true,
       "bankName": "Yapı Kredi Bankası",
       "accountHolder": "M- AMIN ALOBIDAN",
       "iban": "TR79 0006 7010 0000 0416 1173 27",
-      "note": "للمتابعين داخل تركيا — التحويل الفوري عبر FAST / Havale / EFT (الشراء المباشر بالمال يمنح المشتري تنازلاً كاملاً عن حقوق ملفات التعريب لتصبح مِلكه)."
+      "note": "للمتابعين داخل تركيا — التحويل الفوري عبر FAST / Havale / EFT، ثم أرسل بيانات الوصل عبر زر تأكيد التحويل لاستلام ملفك والتنازل الكامل عن الحقوق فوراً."
     }
   },
   "nextgenLauncher": {
@@ -33,9 +49,10 @@
     "waitSeconds": 15,
     "adblockDetector": {
       "enabled": true,
-      "blockSite": true,
-      "title": "تم اكتشاف مانع إعلانات (AdBlock)",
-      "message": "تُقدَّم تعريبات فريق MNOVA مجاناً للجميع بتمويل من الإعلانات. يُرجى إيقاف مانع الإعلانات أو إضافة الموقع إلى القائمة البيضاء لتتمكن من الدخول وتحميل التعريبات."
+      "blockSite": false,
+      "gateFreeDownload": true,
+      "title": "أوقف مانع الإعلانات لإتمام التحميل المجاني",
+      "message": "تُقدَّم تعريبات فريق MNOVA مجاناً 100% للعب الشخصي بتمويل من الإعلانات. يمكنك تصفح الموقع أو الشراء المباشر بحرية، ولفتح رابط التحميل المجاني (LootLabs) يُرجى إيقاف مانع الإعلانات على هذه الصفحة."
     },
     "lootlabsInApp": {
       "enabled": false,
@@ -65,7 +82,6 @@
     "naraka": {
       "name": "NARAKA: BLADEPOINT (ناراكا: بليد بوينت — أونلاين)",
       "lootlabsUrl": "https://loot-link.com/s?zRIEpAsb",
-      "directDriveUrl": "https://drive.google.com/file/d/1dqzEbLV-3JxbmLgYu5pyiDHveCOjcztC/view?usp=drivesdk",
       "itchioUrl": "https://m-amin-alobidan.itch.io/naraka-arabic",
       "directSupporterUrl": "",
       "youtubeVideoUrl": "https://www.youtube.com/watch?v=EAxnnBAkZHE",
@@ -78,7 +94,6 @@
     "mongil": {
       "name": "MONGIL: STAR DIVE (مونجيل: غوص النجوم)",
       "lootlabsUrl": "https://lootdest.org/s?T26XU0ku",
-      "directDriveUrl": "https://drive.google.com/file/d/1_FS-UgzRmESy_hFa3ArI4LqLNURaLYoN/view?usp=drivesdk",
       "itchioUrl": "https://m-amin-alobidan.itch.io/mongil-star-dive-arabic",
       "directSupporterUrl": "",
       "youtubeVideoUrl": "",
@@ -91,7 +106,6 @@
     "exnatura": {
       "name": "Ex Natura: Nature Corrupted (إكس ناتورا: الطبيعة الفاسدة)",
       "lootlabsUrl": "https://loot-link.com/s?typJ8L1j",
-      "directDriveUrl": "https://drive.google.com/file/d/1AXhscI1g42B4oStuwFTucnE8onM2LtlF/view?usp=drivesdk",
       "itchioUrl": "https://m-amin-alobidan.itch.io/ex-natura-arabic",
       "directSupporterUrl": "",
       "youtubeVideoUrl": "",
@@ -104,7 +118,6 @@
     "nwtd": {
       "name": "Nobody Wants to Die (لا أحد يريد أن يموت)",
       "lootlabsUrl": "https://lootdest.org/s?HB2yrhVM",
-      "directDriveUrl": "https://drive.google.com/file/d/1J3qde3fgX4foN_jGv53w1f1Nq28jDcQe/view?usp=drivesdk",
       "itchioUrl": "https://m-amin-alobidan.itch.io/nobody-wants-to-die-arabic",
       "directSupporterUrl": "",
       "youtubeVideoUrl": "",
@@ -117,7 +130,6 @@
     "pale_beyond": {
       "name": "The Pale Beyond (ما وراء الشحوب)",
       "lootlabsUrl": "https://lootdest.org/s?aWcSLdpj",
-      "directDriveUrl": "https://drive.google.com/file/d/1t7dUZJHMbo5WJWBdEiYNUu6rX8THzsry/view?usp=drivesdk",
       "itchioUrl": "https://m-amin-alobidan.itch.io/the-pale-beyond-arabic",
       "directSupporterUrl": "",
       "youtubeVideoUrl": "",
@@ -130,7 +142,6 @@
     "jedi": {
       "name": "Star Wars Jedi: Fallen Order (حرب النجوم: جيدي)",
       "lootlabsUrl": "https://loot-link.com/s?aMdqYdUm",
-      "directDriveUrl": "https://drive.google.com/file/d/1BWIu2EHoofCkZ87UrfWgZgiERrHboioF/view?usp=drivesdk",
       "itchioUrl": "https://m-amin-alobidan.itch.io/jedi-fallen-order-arabic",
       "directSupporterUrl": "",
       "youtubeVideoUrl": "",
@@ -143,7 +154,6 @@
     "steam": {
       "name": "Steam Client Arabic (تعريب منصة ستيم)",
       "lootlabsUrl": "https://lootdest.org/s?2lDnErcN",
-      "directDriveUrl": "https://drive.google.com/file/d/1JNufCQ43QPjYyIjeOhLSsB87C797YolZ/view?usp=drivesdk",
       "itchioUrl": "https://m-amin-alobidan.itch.io/steam-arabic",
       "directSupporterUrl": "",
       "youtubeVideoUrl": "https://www.youtube.com/watch?v=GLY4n7OfQ-I",

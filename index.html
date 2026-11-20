@@ -412,6 +412,21 @@ input[type="search"]:focus{border-color:var(--ac)}
 .faq-item summary{cursor:pointer;font-weight:700;font-size:15px;color:var(--tx);list-style:none}
 .faq-item p{margin-top:10px;font-size:14px;color:var(--mu);line-height:1.7}
 
+/* Trust Strip & Bundle/Commission Highlight */
+.trust-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:16px 0 8px}
+@media(max-width:860px){.trust-strip{grid-template-columns:repeat(2,1fr)}}
+.trust-pill{background:var(--sf);border:1px solid var(--ln);border-radius:12px;padding:10px 12px;font-size:12.5px;display:flex;align-items:center;gap:8px;color:var(--tx)}
+.trust-pill span:first-child{font-size:17px}
+.promo-offer-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:16px 0 22px}
+@media(max-width:780px){.promo-offer-grid{grid-template-columns:1fr}}
+.promo-card{background:linear-gradient(135deg,rgba(255,183,43,.11),rgba(34,199,184,.08));border:1.5px solid rgba(255,183,43,.42);border-radius:18px;padding:20px;display:flex;flex-direction:column;justify-content:space-between;gap:12px}
+.promo-card.comm{background:linear-gradient(135deg,rgba(139,92,246,.12),rgba(56,189,248,.08));border-color:rgba(139,92,246,.45)}
+.promo-card h3{font-size:19px;margin:0;color:var(--tx)}
+.promo-card p{font-size:13.5px;color:var(--mu);line-height:1.65;margin:0}
+.promo-tiers{display:flex;flex-wrap:wrap;gap:6px}
+.promo-tiers span{padding:4px 10px;border-radius:99px;font-size:11.5px;font-weight:700;background:var(--sf);border:1px solid var(--ln);color:var(--tx)}
+.adblock-card{position:relative}
+
 /* Footer */
 footer{padding:40px 0;border-top:1px solid var(--ln);text-align:center;font-size:13px;color:var(--mu)}
 footer a{color:var(--tx);text-decoration:underline}
@@ -422,11 +437,12 @@ footer a{color:var(--tx);text-decoration:underline}
 <div class="top-banner" id="top-banner">
   <div style="display:flex;align-items:center;gap:8px">
     <span>🚀</span>
-    <span><strong id="banner-brand">مركز تحميل تعريبات MNOVA:</strong> مجاني 100% للعب الشخصي عبر LootLabs — أو شراء مباشر ($5 لناراكا الأونلاين / $2 لبقية التعريبات) عبر itch.io و IBAN مع <strong>تنازل كامل عن الحقوق للمشتري</strong>.</span>
+    <span><strong id="banner-brand">مركز تحميل تعريبات MNOVA:</strong> مجاني 100% للعب الشخصي عبر الإعلانات (LootLabs) — أو شراء مباشر ($5 لناراكا / $3 لـ MONGIL / $2 للبقية) عبر itch.io و IBAN مع <strong>تنازل كامل عن الحقوق</strong>.</span>
   </div>
   <div class="top-banner-actions">
     <a id="banner-yt" href="https://www.youtube.com/@MNOVA_Arabic" target="_blank" rel="noopener" class="banner-pill primary">▶ قناة اليوتيوب</a>
-    <a href="#support" class="banner-pill secondary">💎 طرق الدعم</a>
+    <button type="button" onclick="openCommissionModal()" class="banner-pill secondary">🎯 تعريب بالطلب الخاص</button>
+    <a href="#support" class="banner-pill secondary">💎 الشراء والباقة</a>
   </div>
 </div>
 
@@ -499,6 +515,14 @@ footer a{color:var(--tx);text-decoration:underline}
           <small class="mu" style="display:block;margin-top:8px;font-size:11px">💡 معاينة فورية لجودة صياغة الحوارات والترجمة</small>
         </div>
       </div>
+    </div>
+
+    <!-- Trust & Safety Strip -->
+    <div class="trust-strip" aria-label="ضمانات الأمان والثقة">
+      <div class="trust-pill"><span>🛡️</span><span><strong>فحص SHA-256</strong> والتحقق من سلامة الملفات</span></div>
+      <div class="trust-pill"><span>↩️</span><span><strong>استعادة الأصل بضغطة زر</strong> دون الإضرار باللعبة</span></div>
+      <div class="trust-pill"><span>⚡</span><span><strong>مجاني 100% بالتجربة</strong> عبر الدعايات قبل أي شراء</span></div>
+      <div class="trust-pill"><span>🎮</span><span><strong>متوافق مع النسخ الأصلية</strong> Steam / Epic / Netmarble</span></div>
     </div>
 
     <!-- Stats Bar -->
@@ -578,21 +602,21 @@ footer a{color:var(--tx);text-decoration:underline}
                 <strong>Cyberpunk 2077</strong>
                 <small style="display:block;color:var(--mu);font-size:11px">RPG • عالم مفتوح</small>
               </div>
-              <button class="vote-btn" onclick="vote(this, 142)">👍 142 صوت</button>
+              <button class="vote-btn" data-vote-id="cyberpunk" data-base="142" onclick="vote(this, 142, 'cyberpunk')">👍 142 صوت</button>
             </div>
             <div class="vote-item">
               <div>
                 <strong>Elden Ring</strong>
                 <small style="display:block;color:var(--mu);font-size:11px">Soulslike • قصة وخيال</small>
               </div>
-              <button class="vote-btn" onclick="vote(this, 98)">👍 98 صوت</button>
+              <button class="vote-btn" data-vote-id="elden_ring" data-base="98" onclick="vote(this, 98, 'elden_ring')">👍 98 صوت</button>
             </div>
             <div class="vote-item">
               <div>
                 <strong>Hollow Knight: Silksong</strong>
                 <small style="display:block;color:var(--mu);font-size:11px">Metroidvania • مغامرات</small>
               </div>
-              <button class="vote-btn" onclick="vote(this, 84)">👍 84 صوت</button>
+              <button class="vote-btn" data-vote-id="silksong" data-base="84" onclick="vote(this, 84, 'silksong')">👍 84 صوت</button>
             </div>
           </div>
         </div>
@@ -704,20 +728,42 @@ footer a{color:var(--tx);text-decoration:underline}
 <!-- Toast -->
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
+<!-- Hidden Static Netlify Forms Blueprints (Parsed at Deploy Time) -->
+<div hidden aria-hidden="true">
+  <form name="mnova-game-request" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="mnova-game-request">
+    <input name="bot-field"><input name="game_name"><input name="platform"><input name="contact"><textarea name="notes"></textarea>
+  </form>
+  <form name="mnova-community-submit" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="mnova-community-submit">
+    <input name="bot-field"><input name="game_name"><input name="author_name"><input name="download_url"><input name="contact"><textarea name="notes"></textarea>
+  </form>
+  <form name="mnova-iban-receipt" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="mnova-iban-receipt">
+    <input name="bot-field"><input name="buyer_name"><input name="game_choice"><input name="transfer_amount"><input name="transfer_ref"><input name="delivery_contact"><textarea name="notes"></textarea>
+  </form>
+  <form name="mnova-custom-commission" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+    <input type="hidden" name="form-name" value="mnova-custom-commission">
+    <input name="bot-field"><input name="client_name"><input name="package_type"><input name="game_name"><input name="budget"><input name="contact"><textarea name="details"></textarea>
+  </form>
+</div>
+
 <!-- AdBlock Gatekeeper Wall -->
 <div class="adblock-wall" id="mnova-adblock-wall" role="alertdialog" aria-modal="true" aria-labelledby="ab-title">
   <div class="adblock-card">
+    <button type="button" class="close-btn" id="ab-close-btn" onclick="dismissAdBlockWall()" aria-label="إغلاق والعودة لتصفح الموقع">✕</button>
     <div style="font-size:48px;line-height:1;margin-bottom:10px">🛡️</div>
-    <h2 id="ab-title" style="font-size:22px;color:var(--ac);margin-bottom:8px">تم اكتشاف مانع إعلانات (AdBlock)</h2>
-    <p id="ab-msg" style="font-size:14.5px;line-height:1.75;color:var(--tx)">تُقدَّم تعريبات فريق MNOVA مجاناً للجميع بتمويل من الإعلانات. يُرجى إيقاف مانع الإعلانات أو إضافة الموقع إلى القائمة البيضاء لتتمكن من الدخول وتحميل التعريبات.</p>
+    <h2 id="ab-title" style="font-size:22px;color:var(--ac);margin-bottom:8px">أوقف مانع الإعلانات لإتمام التحميل المجاني</h2>
+    <p id="ab-msg" style="font-size:14.5px;line-height:1.75;color:var(--tx)">تُقدَّم تعريبات فريق MNOVA مجاناً 100% للعب الشخصي بتمويل من الإعلانات. يمكنك تصفح الموقع أو الشراء المباشر بحرية، ولفتح رابط التحميل المجاني (LootLabs) يُرجى إيقاف مانع الإعلانات على هذه الصفحة.</p>
     <div class="adblock-steps">
-      <div><strong>1.</strong> اضغط على أيقونة مانع الإعلانات في أعلى المتصفح (uBlock / AdBlock / درع المتصفح).</div>
+      <div><strong>1.</strong> اضغط على أيقونة مانع الإعلانات أو درع المتصفح (uBlock / AdBlock / Brave / Opera GX).</div>
       <div><strong>2.</strong> اختر <strong>إيقاف الحظر على هذا الموقع</strong> (Whitelist / Pause on this site).</div>
-      <div><strong>3.</strong> اضغط زر <strong>إعادة الفحص</strong> بالأسفل للدخول فوراً.</div>
+      <div><strong>3.</strong> اضغط زر <strong>إعادة الفحص والمتابعة</strong> بالأسفل لفتح التحميل المجاني فوراً.</div>
     </div>
     <div style="display:flex;flex-direction:column;gap:10px">
-      <button type="button" class="btn pr" id="ab-recheck-btn" onclick="recheckAdBlocker()">🔄 تحقّقت وأطفأت مانع الإعلانات — إعادة الفحص</button>
-      <a id="ab-itch-link" href="https://itch.io" target="_blank" rel="noopener noreferrer" class="btn sup sm">💎 أو اشترِ التعريب مباشرة بدون إعلانات مع تنازل عن الحقوق (itch.io)</a>
+      <button type="button" class="btn pr" id="ab-recheck-btn" onclick="recheckAdBlocker()">🔄 أطفأت مانع الإعلانات — متابعة للتحميل المجاني</button>
+      <a id="ab-itch-link" href="https://m-amin-alobidan.itch.io" target="_blank" rel="noopener noreferrer" class="btn sup sm">💎 أو تخطّ الإعلانات واشترِ التعريب مباشرة مع تنازل عن الحقوق (itch.io)</a>
+      <button type="button" class="btn sc sm" id="ab-dismiss-btn" onclick="dismissAdBlockWall()">← العودة لتصفّح الموقع والصور</button>
     </div>
     <div class="adblock-status" id="ab-status-msg"></div>
   </div>
@@ -774,17 +820,33 @@ const DEFAULT_CFG = {
     youtubeUrl: "",
     discordUrl: "",
     telegramUrl: "",
-    xUrl: ""
+    xUrl: "",
+    contactEmail: ""
+  },
+  analytics: {
+    cloudflareBeaconToken: "",
+    clarityProjectId: ""
   },
   donations: {
     itchIoProfileUrl: "https://m-amin-alobidan.itch.io",
-    itchIoNote: "تحميل مباشر سريع بدون إعلانات ($5 لتعريب NARAKA: BLADEPOINT الأونلاين و $2 لبقية التعريبات) — عند الشراء بالمال يتنازل فريق MNOVA عن جميع حقوقه في ملفات التعريب لتصبح مِلكاً للمشتري بحرية كاملة (بينما التحميل عبر LootLabs مجاني 100% للعب الشخصي).",
+    itchIoNote: "تحميل مباشر سريع بدون إعلانات ($5 لتعريب NARAKA: BLADEPOINT الأونلاين، $3 لتعريب MONGIL: STAR DIVE، و $2 لبقية التعريبات) — عند الشراء بالمال يتنازل فريق MNOVA عن جميع حقوقه في ملفات التعريب لتصبح مِلكاً للمشتري بحرية كاملة (بينما التحميل عبر LootLabs مجاني 100% للعب الشخصي).",
+    bundle: {
+      enabled: true,
+      priceUsd: 9.99,
+      regularTotalUsd: 18,
+      itchBundleUrl: "https://m-amin-alobidan.itch.io",
+      note: "احصل على جميع تعريبات MNOVA الـ 7 دفعة واحدة بسعر موفّر ($9.99 بدلاً من $18) شاملة التنازل الكامل عن الحقوق."
+    },
+    commissions: {
+      enabled: true,
+      startingPriceUsd: 25
+    },
     turkishIban: {
       enabled: true,
       bankName: "اسم البنك التركي (من config.json)",
       accountHolder: "اسم صاحب الحساب",
       iban: "TR00 0000 0000 0000 0000 0000 00",
-      note: "للمتابعين داخل تركيا — التحويل الفوري عبر FAST / Havale / EFT (الشراء المباشر بالمال يمنح المشتري تنازلاً كاملاً عن حقوق ملفات التعريب لتصبح مِلكه)."
+      note: "للمتابعين داخل تركيا — التحويل الفوري عبر FAST / Havale / EFT، ثم أرسل بيانات الوصل عبر زر تأكيد التحويل لاستلام ملفك والتنازل الكامل عن الحقوق فوراً."
     }
   },
   nextgenLauncher: {
@@ -799,9 +861,10 @@ const DEFAULT_CFG = {
     waitSeconds: 15,
     adblockDetector: {
       enabled: true,
-      blockSite: true,
-      title: "تم اكتشاف مانع إعلانات (AdBlock)",
-      message: "تُقدَّم تعريبات فريق MNOVA مجاناً للجميع بتمويل من الإعلانات. يُرجى إيقاف مانع الإعلانات أو إضافة الموقع إلى القائمة البيضاء لتتمكن من الدخول وتحميل التعريبات."
+      blockSite: false,
+      gateFreeDownload: true,
+      title: "أوقف مانع الإعلانات لإتمام التحميل المجاني",
+      message: "تُقدَّم تعريبات فريق MNOVA مجاناً 100% للعب الشخصي بتمويل من الإعلانات. يمكنك تصفح الموقع أو الشراء المباشر بحرية، ولفتح رابط التحميل المجاني (LootLabs) يُرجى إيقاف مانع الإعلانات على هذه الصفحة."
     },
     lootlabsInApp: {
       enabled: false,
@@ -1135,9 +1198,12 @@ function showToast(msg) {
 function mergeConfig(rawCfg) {
   CFG = {
     site: Object.assign({}, DEFAULT_CFG.site, rawCfg.site || {}),
+    analytics: Object.assign({}, DEFAULT_CFG.analytics, rawCfg.analytics || {}),
     donations: {
       itchIoProfileUrl: (rawCfg.donations && rawCfg.donations.itchIoProfileUrl) || DEFAULT_CFG.donations.itchIoProfileUrl,
       itchIoNote: (rawCfg.donations && rawCfg.donations.itchIoNote) || DEFAULT_CFG.donations.itchIoNote,
+      bundle: Object.assign({}, DEFAULT_CFG.donations.bundle, (rawCfg.donations && rawCfg.donations.bundle) || {}),
+      commissions: Object.assign({}, DEFAULT_CFG.donations.commissions, (rawCfg.donations && rawCfg.donations.commissions) || {}),
       turkishIban: Object.assign({}, DEFAULT_CFG.donations.turkishIban, (rawCfg.donations && rawCfg.donations.turkishIban) || {})
     },
     nextgenLauncher: Object.assign({}, DEFAULT_CFG.nextgenLauncher, rawCfg.nextgenLauncher || {}),
@@ -1155,7 +1221,10 @@ function mergeConfig(rawCfg) {
             : DEFAULT_CFG.ads.adblockDetector.enabled,
           blockSite: (rawCfg.ads && rawCfg.ads.adblockDetector && rawCfg.ads.adblockDetector.blockSite !== undefined)
             ? Boolean(rawCfg.ads.adblockDetector.blockSite)
-            : DEFAULT_CFG.ads.adblockDetector.blockSite
+            : DEFAULT_CFG.ads.adblockDetector.blockSite,
+          gateFreeDownload: (rawCfg.ads && rawCfg.ads.adblockDetector && rawCfg.ads.adblockDetector.gateFreeDownload !== undefined)
+            ? Boolean(rawCfg.ads.adblockDetector.gateFreeDownload)
+            : DEFAULT_CFG.ads.adblockDetector.gateFreeDownload
         }
       ),
       lootlabsInApp: Object.assign({}, DEFAULT_CFG.ads.lootlabsInApp, (rawCfg.ads && rawCfg.ads.lootlabsInApp) || {}),
@@ -1215,12 +1284,6 @@ function renderBrandAndStats() {
   $("#banner-brand").textContent = s.title + ":";
   $("#hero-title").textContent = s.heroTitle;
   $("#hero-lead").textContent = s.heroLead;
-
-  const heroFlagImg = $("#hero-flagship-img");
-  if (heroFlagImg) {
-    const nk = G.find(x => x.id === "naraka");
-    heroFlagImg.src = (nk && nk.coverImg) || IMGS.naraka_cover;
-  }
 
   const ytBtn = $("#banner-yt");
   if (ytBtn) {
@@ -1338,11 +1401,49 @@ function renderSpotlights() {
 function renderSupportSection() {
   const d = CFG.donations;
   const ib = d.turkishIban || {};
+  const bnd = d.bundle || DEFAULT_CFG.donations.bundle;
+  const com = d.commissions || DEFAULT_CFG.donations.commissions;
   const itchOk = isValidUrl(d.itchIoProfileUrl);
   const ibanClean = (ib.iban || "").trim();
   const isPlaceholderIban = !ibanClean || ibanClean.startsWith("TR00 0000") || ibanClean.startsWith("TR000000");
 
+  const promoHtml = `
+    <div class="promo-offer-grid" style="grid-column:1/-1;margin:0 0 4px">
+      <div class="promo-card">
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <span class="verified-badge" style="align-self:flex-start">🎁 وفر 45% • صفقة جميع المشاريع</span>
+          <h3>باقة MNOVA الشاملة (كل الـ ${G.length} تعريبات)</h3>
+          <p>${esc(bnd.note || "احصل على جميع تعريبات MNOVA دفعة واحدة بسعر موفّر مع تنازل كامل عن الحقوق وتحديثات مباشرة.")}</p>
+          <div class="promo-tiers">
+            <span>🔥 السعر الموفّر: $${esc(bnd.priceUsd || 9.99)} بدل $${esc(bnd.regularTotalUsd || 18)}</span>
+            <span>✅ بدون إعلانات</span>
+            <span>📜 تنازل كامل عن الحقوق</span>
+          </div>
+        </div>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <button type="button" class="btn pr" style="flex:1" onclick="openIbanReceiptModal('MEGA_BUNDLE')">🎁 اطلب الباقة الشاملة ($${esc(bnd.priceUsd || 9.99)})</button>
+          <a class="btn sc" href="${esc(isValidUrl(bnd.itchBundleUrl) ? bnd.itchBundleUrl : (itchOk ? d.itchIoProfileUrl : '#support'))}" target="_blank" rel="noopener">متجر itch.io ↗</a>
+        </div>
+      </div>
+
+      <div class="promo-card comm">
+        <div style="display:flex;flex-direction:column;gap:8px">
+          <span class="verified-badge" style="align-self:flex-start;background:rgba(139,92,246,.18);color:#c4b5fd;border-color:rgba(139,92,246,.42)">🎯 للأفراد وصنّاع المحتوى والاستوديوهات</span>
+          <h3>اطلب تعريب لعبتك المفضلة أو رعاية باسم قناتك</h3>
+          <p>هل تريد تعريباً مخصصاً للعبة محددة أو وضع شعار قناتك على شاشة البداية وفيديو الاستعراض؟ ننفّذ تعريبات حسب الطلب باحترافية عالية.</p>
+          <div class="promo-tiers">
+            <span>🎮 لعبة إندي: من $${esc(com.startingPriceUsd || 25)}</span>
+            <span>📖 لعبة قصة متوسطة: حسب حجم النصوص</span>
+            <span>🎬 رعاية قناة يوتيوب / ستريمر</span>
+          </div>
+        </div>
+        <button type="button" class="btn sup" style="width:100%" onclick="openCommissionModal()">🎯 اطلب عرض سعر لتعريب خاص أو رعاية</button>
+      </div>
+    </div>
+  `;
+
   $("#support-cards").innerHTML = `
+    ${promoHtml}
     <div class="support-card">
       <div>
         <h3><span>🎮</span> شراء وتملّك الحقوق عبر itch.io ($5 / $3 / $2)</h3>
@@ -1356,7 +1457,7 @@ function renderSupportSection() {
     <div class="support-card">
       <div>
         <h3><span>🏦</span> التحويل المباشر داخل تركيا (IBAN)</h3>
-        <p>${esc(ib.note || "للمتابعين داخل تركيا عبر FAST / Havale / EFT — يمنح نفس التنازل الكامل عن الحقوق للمشتري.")}</p>
+        <p>${esc(ib.note || "للمتابعين داخل تركيا عبر FAST / Havale / EFT — بعد التحويل اضغط زر التأكيد بالأسفل ليصلك رابط التحميل المباشر وتنازل الحقوق فوراً.")}</p>
         <div class="iban-box" style="margin-top:10px">
           <div class="iban-meta"><strong>البنك:</strong> ${esc(ib.bankName || "-")}</div>
           <div class="iban-meta"><strong>الاسم:</strong> ${esc(ib.accountHolder || "-")}</div>
@@ -1364,13 +1465,16 @@ function renderSupportSection() {
         </div>
         ${isPlaceholderIban ? '<div class="warn-pill" style="margin-top:8px">⚠️ تذكير لصاحب الموقع: استبدل هذا الرقم التجريبي برقم الـ IBAN الحقيقي في <code>config.json</code>.</div>' : ''}
       </div>
-      <button type="button" class="btn sup" onclick="copyTurkishIban(this)">📋 نسخ رقم الـ IBAN بضغطة واحدة</button>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <button type="button" class="btn sup" onclick="copyTurkishIban(this)">📋 نسخ رقم الـ IBAN بضغطة واحدة</button>
+        <button type="button" class="btn pr" onclick="openIbanReceiptModal()">📩 أرسل تأكيد التحويل لاستلام التعريب فوراً</button>
+      </div>
     </div>
 
     <div class="support-card">
       <div>
         <h3><span>🚀</span> التحميل المجاني للعب + NextGen Launcher</h3>
-        <p>${isValidUrl(CFG.site.youtubeUrl) ? 'للعب الشخصي مجاناً 100%: شاهد عبر يوتيوب أو أكمل بضع خطوات إعلانية خفيفة على LootLabs بدون دفع أي مبلغ.' : 'للعب الشخصي مجاناً 100%: أكمل بضع خطوات إعلانية خفيفة عبر LootLabs بدون أي تكلفة مالية (الحقوق محفوظة لفريق MNOVA للنسخ المجانية).'}<br><strong>ميزة الداعمين والمشترين:</strong> ${esc(CFG.nextgenLauncher.supporterBadgeText)}</p>
+        <p>${isValidUrl(CFG.site.youtubeUrl) ? 'للعب الشخصي مجاناً 100%: جرّب جميع تعريباتنا مجاناً عبر إتمام خطوات LootLabs الإعلانية الخفيفة بدون دفع أي مبلغ.' : 'للعب الشخصي مجاناً 100%: أكمل بضع خطوات إعلانية خفيفة عبر LootLabs بدون أي تكلفة مالية (الحقوق محفوظة لفريق MNOVA للنسخ المجانية).'}<br><strong>ميزة الداعمين والمشترين:</strong> ${esc(CFG.nextgenLauncher.supporterBadgeText)}</p>
       </div>
       <div style="display:flex;gap:8px;flex-wrap:wrap">
         ${isValidUrl(CFG.site.youtubeUrl) ? `<a class="btn sc" style="flex:1" href="${esc(CFG.site.youtubeUrl)}" target="_blank" rel="noopener">▶ قناة يوتيوب ↗</a>` : ''}
@@ -1514,6 +1618,7 @@ function isSearchCrawler() {
 }
 
 window.__mnovaAdScriptBlocked = false;
+window.__mnovaPendingFreeGameId = "";
 const dismissedAdSlots = new Set();
 let adMountChain = Promise.resolve();
 
@@ -1522,8 +1627,9 @@ function markAdScriptBlocked(sc) {
   if (isSearchCrawler()) return;
   if (navigator.onLine !== false) {
     window.__mnovaAdScriptBlocked = true;
+    const ab = (CFG.ads && CFG.ads.adblockDetector) || DEFAULT_CFG.ads.adblockDetector;
     const wall = document.getElementById("mnova-adblock-wall");
-    if (wall && !wall.classList.contains("on")) {
+    if (ab && ab.blockSite === true && wall && !wall.classList.contains("on")) {
       enforceAdBlockDetector(false);
     }
   }
@@ -1700,6 +1806,62 @@ async function runAdBlockProbe(delayMs = 400) {
   return Boolean(domBlocked || window.__mnovaAdScriptBlocked);
 }
 
+function dismissAdBlockWall() {
+  const ads = CFG.ads || DEFAULT_CFG.ads;
+  const ab = ads.adblockDetector || DEFAULT_CFG.ads.adblockDetector;
+  if (ab && ab.blockSite === true) return;
+  const wall = document.getElementById("mnova-adblock-wall");
+  if (wall) wall.classList.remove("on");
+  window.__mnovaPendingFreeGameId = "";
+  document.body.style.overflow = (mdl && mdl.classList.contains("on")) ? "hidden" : "";
+}
+
+function showAdBlockWallUI(isRecheck, gameObj) {
+  const ads = CFG.ads || DEFAULT_CFG.ads;
+  const ab = ads.adblockDetector || DEFAULT_CFG.ads.adblockDetector;
+  const wall = document.getElementById("mnova-adblock-wall");
+  const statusEl = document.getElementById("ab-status-msg");
+  const titleEl = document.getElementById("ab-title");
+  const msgEl = document.getElementById("ab-msg");
+  const itchEl = document.getElementById("ab-itch-link");
+  const closeBtn = document.getElementById("ab-close-btn");
+  const dismissBtn = document.getElementById("ab-dismiss-btn");
+  if (!wall) return;
+
+  const hardLock = Boolean(ab && ab.blockSite === true);
+  if (closeBtn) closeBtn.style.display = hardLock ? "none" : "";
+  if (dismissBtn) dismissBtn.style.display = hardLock ? "none" : "";
+
+  if (titleEl) {
+    titleEl.textContent = gameObj
+      ? `أوقف مانع الإعلانات لتحميل تعريب ${gameObj.ar} مجاناً`
+      : (ab.title || "أوقف مانع الإعلانات لإتمام التحميل المجاني");
+  }
+  if (msgEl && ab.message) msgEl.textContent = ab.message;
+
+  const itchProfile = (CFG.donations && isValidUrl(CFG.donations.itchIoProfileUrl)) ? CFG.donations.itchIoProfileUrl : "https://m-amin-alobidan.itch.io";
+  if (itchEl) {
+    if (gameObj && isValidUrl(gameObj.itchioUrl)) {
+      const price = getGamePrice(gameObj);
+      itchEl.href = gameObj.itchioUrl.trim();
+      itchEl.textContent = `💎 أو تخطّ الإعلانات واشترِ ${gameObj.en} مباشرة ($${price} • itch.io)`;
+    } else {
+      itchEl.href = itchProfile;
+      itchEl.textContent = "💎 أو تخطّ الإعلانات واشترِ التعريب مباشرة مع تنازل عن الحقوق (itch.io)";
+    }
+  }
+
+  wall.classList.add("on");
+  document.body.style.overflow = "hidden";
+  if (statusEl) {
+    statusEl.textContent = isRecheck
+      ? "⚠️ لا يزال مانع الإعلانات مفعّلاً! أوقفه على هذه الصفحة ثم اضغط إعادة الفحص."
+      : "";
+  }
+  const btn = document.getElementById("ab-recheck-btn");
+  if (btn) btn.focus();
+}
+
 async function enforceAdBlockDetector(isRecheck = false) {
   const ads = CFG.ads || DEFAULT_CFG.ads;
   const ab = ads.adblockDetector || DEFAULT_CFG.ads.adblockDetector;
@@ -1710,29 +1872,13 @@ async function enforceAdBlockDetector(isRecheck = false) {
     return false;
   }
 
-  const titleEl = document.getElementById("ab-title");
-  const msgEl = document.getElementById("ab-msg");
-  const itchEl = document.getElementById("ab-itch-link");
-  if (titleEl && ab.title) titleEl.textContent = ab.title;
-  if (msgEl && ab.message) msgEl.textContent = ab.message;
-  if (itchEl && CFG.donations && isValidUrl(CFG.donations.itchIoProfileUrl)) {
-    itchEl.href = CFG.donations.itchIoProfileUrl;
-  }
-
   const blocked = await runAdBlockProbe(isRecheck ? 550 : 400);
   if (blocked) {
-    if (ab.blockSite !== false) {
-      wall.classList.add("on");
-      document.body.style.overflow = "hidden";
-      if (statusEl) {
-        statusEl.textContent = isRecheck
-          ? "⚠️ لا يزال مانع الإعلانات مفعّلاً! تأكد من إيقافه على هذه الصفحة ثم أعد المحاولة."
-          : "";
-      }
-      const btn = document.getElementById("ab-recheck-btn");
-      if (btn) btn.focus();
-    } else if (!isRecheck) {
-      showToast("⚠️ تم اكتشاف مانع الإعلانات — تعطيله يدعم استمرار التعريبات مجاناً.");
+    const pendingGame = window.__mnovaPendingFreeGameId
+      ? G.find(x => x.id === window.__mnovaPendingFreeGameId)
+      : null;
+    if (ab.blockSite === true || pendingGame || isRecheck) {
+      showAdBlockWallUI(isRecheck, pendingGame);
     }
     return true;
   }
@@ -1741,7 +1887,12 @@ async function enforceAdBlockDetector(isRecheck = false) {
   if (statusEl) statusEl.textContent = "";
   document.body.style.overflow = (mdl && mdl.classList.contains("on")) ? "hidden" : "";
   if (isRecheck) {
-    showToast("✅ شكراً لتعطيل مانع الإعلانات — أهلاً بك في MNOVA!");
+    const pendingId = window.__mnovaPendingFreeGameId;
+    window.__mnovaPendingFreeGameId = "";
+    showToast("✅ شكراً لتعطيل مانع الإعلانات — جاري المتابعة!");
+    if (pendingId) {
+      setTimeout(() => proceedFreeDownload(pendingId), 200);
+    }
   }
   return false;
 }
@@ -1866,8 +2017,25 @@ function openLootlabsInAppRewardModal(g, targetUrl) {
   }
 }
 
-function openFreeDownload(id, ev) {
+async function openFreeDownload(id, ev) {
   if (ev) ev.stopPropagation();
+  const g = G.find(x => x.id === id);
+  if (!g) return;
+
+  const ads = CFG.ads || DEFAULT_CFG.ads;
+  const ab = ads.adblockDetector || DEFAULT_CFG.ads.adblockDetector;
+  if (ads.enabled && ab && ab.enabled !== false && ab.gateFreeDownload !== false && !isSearchCrawler()) {
+    const blocked = await runAdBlockProbe(220);
+    if (blocked) {
+      window.__mnovaPendingFreeGameId = id;
+      showAdBlockWallUI(false, g);
+      return;
+    }
+  }
+  proceedFreeDownload(id);
+}
+
+function proceedFreeDownload(id) {
   clearWaitTimer();
   const g = G.find(x => x.id === id);
   if (!g) return;
@@ -1992,7 +2160,10 @@ function openSupportDownloadModal(id, ev) {
           <div class="iban-number">${esc(ibanFormatted)}</div>
         </div>
         ${isPlaceholderIban ? '<div class="warn-pill">⚠️ تذكير: ضع رقم الـ IBAN التركي الحقيقي داخل <code>config.json</code>.</div>' : ''}
-        <button type="button" class="btn sup" style="width:100%" onclick="copyTurkishIban(this)">📋 نسخ رقم الـ IBAN التركي بضغطة واحدة</button>
+        <div style="display:flex;gap:8px;flex-wrap:wrap">
+          <button type="button" class="btn sup" style="flex:1" onclick="copyTurkishIban(this)">📋 نسخ رقم الـ IBAN</button>
+          <button type="button" class="btn pr" style="flex:1" onclick="openIbanReceiptModal('${esc(g.id)}')">📩 أرسل تأكيد التحويل للاستلام</button>
+        </div>
       </div>
 
       <!-- Option 3: NextGen Launcher + Free LootLabs fallback -->
@@ -2220,7 +2391,11 @@ mdl.onclick = e => { if (e.target === mdl) closeModal(); };
 document.addEventListener("keydown", e => {
   if (e.key === "Escape") {
     const abWall = document.getElementById("mnova-adblock-wall");
-    if (abWall && abWall.classList.contains("on")) return;
+    if (abWall && abWall.classList.contains("on")) {
+      const ab = (CFG.ads && CFG.ads.adblockDetector) || DEFAULT_CFG.ads.adblockDetector;
+      if (ab && ab.blockSite !== true) dismissAdBlockWall();
+      return;
+    }
     if ($("#lightbox").classList.contains("on")) {
       closeLightbox();
     } else {
@@ -2232,14 +2407,54 @@ document.addEventListener("keydown", e => {
   }
 });
 
-// Community voting function
-function vote(btn, count) {
+// Persistent local community voting
+function getSavedVotes() {
+  try { return JSON.parse(localStorage.getItem("mnova_votes_v1") || "{}"); } catch (_) { return {}; }
+}
+
+function hydrateVotes() {
+  const saved = getSavedVotes();
+  document.querySelectorAll(".vote-btn[data-vote-id]").forEach(btn => {
+    const vid = btn.getAttribute("data-vote-id");
+    const base = Number(btn.getAttribute("data-base") || 0);
+    if (saved[vid]) {
+      btn.classList.add("voted");
+      btn.textContent = `✓ تم التصويت (${base + 1})`;
+    }
+  });
+}
+
+function vote(btn, count, vid) {
   if (btn.classList.contains("voted")) return;
   btn.classList.add("voted");
   btn.textContent = `✓ تم التصويت (${count + 1})`;
+  if (vid) {
+    const saved = getSavedVotes();
+    saved[vid] = true;
+    try { localStorage.setItem("mnova_votes_v1", JSON.stringify(saved)); } catch (_) {}
+  }
+  showToast("✓ تم حفظ صوتك بنجاح!");
 }
 
-// Community Submit Modal
+async function submitNetlifyForm(formName, fields) {
+  if (isLocalEnv()) return { ok: true, local: true };
+  const params = new URLSearchParams();
+  params.set("form-name", formName);
+  Object.keys(fields || {}).forEach(k => params.set(k, String(fields[k] || "")));
+  try {
+    const res = await fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: params.toString()
+    });
+    return { ok: res.ok };
+  } catch (err) {
+    console.warn("Netlify Form submit error:", err);
+    return { ok: false };
+  }
+}
+
+// Community Submit Modal (Real Netlify Form)
 function openSubmitModal() {
   pn.innerHTML = `
     <button class="close-btn" id="x" onclick="closeModal()" aria-label="إغلاق">✕</button>
@@ -2247,11 +2462,11 @@ function openSubmitModal() {
       <span style="font-size:28px">📤</span>
       <div>
         <h2 style="font-size:22px;margin:0">إرسال تعريب جديد لمجتمع MNOVA</h2>
-        <span class="mu" style="font-size:12px">نرحب بكل مساهمات اللاعبين والمترجمين العرب</span>
+        <span class="mu" style="font-size:12px">نرحب بكل مساهمات اللاعبين والمترجمين العرب — يصلنا طلبك مباشرة</span>
       </div>
     </div>
     <p style="font-size:14px;color:var(--tx);line-height:1.6;margin-bottom:16px">
-      أدخل تفاصيل اللعبة ورابط ملف التعريب، وسيتواصل معك فريق MNOVA لنشره باسمك وحقوقك كاملة.
+      أدخل تفاصيل اللعبة ورابط ملف التعريب ووسيلة التواصل معك، وسيفحص فريق MNOVA الملف وينشره باسمك وحقوقك كاملة.
     </p>
     <form onsubmit="handleCommunitySubmit(event)" style="display:flex;flex-direction:column;gap:12px">
       <div>
@@ -2263,36 +2478,51 @@ function openSubmitModal() {
         <input type="text" id="sub-author" required placeholder="اسمك أو لقبك الذي ترغب بعرضه" style="width:100%;padding:10px;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid var(--ln);color:var(--tx)">
       </div>
       <div>
-        <label style="display:block;font-size:13px;margin-bottom:4px;color:var(--tx)">رابط ملفات التعريب (itch.io / Google Drive أو غيره):</label>
+        <label style="display:block;font-size:13px;margin-bottom:4px;color:var(--tx)">رابط ملفات التعريب (Google Drive / itch.io أو غيره):</label>
         <input type="url" id="sub-url" required placeholder="https://..." style="width:100%;padding:10px;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid var(--ln);color:var(--tx)">
+      </div>
+      <div>
+        <label style="display:block;font-size:13px;margin-bottom:4px;color:var(--tx)">وسيلة التواصل (إيميل / تيليجرام / ديسكورد):</label>
+        <input type="text" id="sub-contact" required placeholder="مثال: @username أو email@example.com" style="width:100%;padding:10px;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid var(--ln);color:var(--tx)">
       </div>
       <div>
         <label style="display:block;font-size:13px;margin-bottom:4px;color:var(--tx)">ملاحظات أو طريقة التثبيت:</label>
         <textarea id="sub-notes" rows="3" placeholder="اكتب نبذة عن التعريب وطريقة وضعه في اللعبة..." style="width:100%;padding:10px;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid var(--ln);color:var(--tx)"></textarea>
       </div>
-      <button type="submit" class="btn pr" style="margin-top:8px">✓ إرسال التعريب للفحص والنشر</button>
+      <button type="submit" id="sub-btn" class="btn pr" style="margin-top:8px">✓ إرسال التعريب لفريق MNOVA الآن</button>
     </form>
   `;
   mdl.classList.add("on");
   document.body.style.overflow = "hidden";
 }
 
-function handleCommunitySubmit(e) {
+async function handleCommunitySubmit(e) {
   e.preventDefault();
+  const btn = document.getElementById("sub-btn");
+  if (btn) { btn.disabled = true; btn.textContent = "⏳ جاري الإرسال..."; }
+  const res = await submitNetlifyForm("mnova-community-submit", {
+    game_name: ($("#sub-game") && $("#sub-game").value) || "",
+    author_name: ($("#sub-author") && $("#sub-author").value) || "",
+    download_url: ($("#sub-url") && $("#sub-url").value) || "",
+    contact: ($("#sub-contact") && $("#sub-contact").value) || "",
+    notes: ($("#sub-notes") && $("#sub-notes").value) || ""
+  });
   pn.innerHTML = `
     <button class="close-btn" id="x" onclick="closeModal()" aria-label="إغلاق">✕</button>
     <div style="text-align:center;padding:30px 10px">
-      <div style="font-size:52px;margin-bottom:12px">🎉</div>
-      <h2 style="font-size:24px;color:var(--ac);margin-bottom:8px">تم استلام مشاركتك!</h2>
+      <div style="font-size:52px;margin-bottom:12px">${res.ok ? "🎉" : "⚠️"}</div>
+      <h2 style="font-size:24px;color:var(--ac);margin-bottom:8px">${res.ok ? "تم إرسال مشاركتك بنجاح!" : "تعذّر الإرسال مؤقتاً"}</h2>
       <p style="font-size:15px;color:var(--tx);line-height:1.7;max-width:500px;margin:0 auto 20px">
-        شكراً لمساهمتك في دعم مجتمع الألعاب العربي! للتنسيق السريع، أرسل لنا الملف أيضاً عبر قناة الديسكورد أو التيليجرام.
+        ${res.ok
+          ? "وصلت تفاصيل تعريبك ووسيلة التواصل إلى لوحة فريق MNOVA مباشرة، وسنراجعها ونتواصل معك لنشرها باسمك الكامل."
+          : "حدث خطأ في الاتصال بالخادم — تأكد من الإنترنت وأعد المحاولة أو تواصل معنا عبر قناة MNOVA على يوتيوب."}
       </p>
       <button class="btn pr" onclick="closeModal()">العودة للموقع</button>
     </div>
   `;
 }
 
-// Community Request Modal
+// Community Request Modal (Real Netlify Form)
 function openRequestModal() {
   pn.innerHTML = `
     <button class="close-btn" id="x" onclick="closeModal()" aria-label="إغلاق">✕</button>
@@ -2300,7 +2530,7 @@ function openRequestModal() {
       <span style="font-size:28px">💡</span>
       <div>
         <h2 style="font-size:22px;margin:0">طلب أو اقتراح تعريب لعبة</h2>
-        <span class="mu" style="font-size:12px">صوتك يحدد أولويات مشاريع MNOVA القادمة</span>
+        <span class="mu" style="font-size:12px">يصلنا طلبك مباشرة ويُحسب في أولويات مشاريع MNOVA القادمة</span>
       </div>
     </div>
     <form onsubmit="handleRequestSubmit(event)" style="display:flex;flex-direction:column;gap:12px">
@@ -2312,22 +2542,204 @@ function openRequestModal() {
         <label style="display:block;font-size:13px;margin-bottom:4px;color:var(--tx)">المنصة (Steam / Epic / PC):</label>
         <input type="text" id="req-plat" required placeholder="مثال: PC - Steam" style="width:100%;padding:10px;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid var(--ln);color:var(--tx)">
       </div>
-      <button type="submit" class="btn pr" style="margin-top:8px">✓ إرسال الاقتراح لصندوق التصويت</button>
+      <div>
+        <label style="display:block;font-size:13px;margin-bottom:4px;color:var(--tx)">وسيلة إشعارك عند صدور التعريب (اختياري):</label>
+        <input type="text" id="req-contact" placeholder="إيميل أو حساب يوتيوب/تيليجرام (اختياري)" style="width:100%;padding:10px;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid var(--ln);color:var(--tx)">
+      </div>
+      <div>
+        <label style="display:block;font-size:13px;margin-bottom:4px;color:var(--tx)">ملاحظات إضافية (اختياري):</label>
+        <textarea id="req-notes" rows="2" placeholder="أي تفاصيل تهمك حول إصدار اللعبة..." style="width:100%;padding:10px;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid var(--ln);color:var(--tx)"></textarea>
+      </div>
+      <button type="submit" id="req-btn" class="btn pr" style="margin-top:8px">✓ إرسال الطلب مباشرة لفريق MNOVA</button>
     </form>
   `;
   mdl.classList.add("on");
   document.body.style.overflow = "hidden";
 }
 
-function handleRequestSubmit(e) {
+async function handleRequestSubmit(e) {
   e.preventDefault();
+  const btn = document.getElementById("req-btn");
+  if (btn) { btn.disabled = true; btn.textContent = "⏳ جاري الإرسال..."; }
+  const res = await submitNetlifyForm("mnova-game-request", {
+    game_name: ($("#req-game") && $("#req-game").value) || "",
+    platform: ($("#req-plat") && $("#req-plat").value) || "",
+    contact: ($("#req-contact") && $("#req-contact").value) || "",
+    notes: ($("#req-notes") && $("#req-notes").value) || ""
+  });
   pn.innerHTML = `
     <button class="close-btn" id="x" onclick="closeModal()" aria-label="إغلاق">✕</button>
     <div style="text-align:center;padding:30px 10px">
-      <div style="font-size:52px;margin-bottom:12px">🗳️</div>
-      <h2 style="font-size:24px;color:var(--ac);margin-bottom:8px">تمت إضافة اللعبة إلى صندوق الطلبات!</h2>
+      <div style="font-size:52px;margin-bottom:12px">${res.ok ? "🗳️" : "⚠️"}</div>
+      <h2 style="font-size:24px;color:var(--ac);margin-bottom:8px">${res.ok ? "تم تسجيل طلبك فعلياً!" : "تعذّر الإرسال مؤقتاً"}</h2>
       <p style="font-size:15px;color:var(--tx);line-height:1.7;max-width:500px;margin:0 auto 20px">
-        تم تسجيل طلبك بنجاح وسيُؤخذ بالاعتبار في التصويت القادم على قناة MNOVA.
+        ${res.ok
+          ? "وصل اقتراحك إلى فريق MNOVA مباشرة وسيُؤخذ بالاعتبار في جدول التعريبات القادم."
+          : "حدث خطأ في الاتصال بالخادم — أعد المحاولة بعد قليل."}
+      </p>
+      <button class="btn pr" onclick="closeModal()">العودة للموقع</button>
+    </div>
+  `;
+}
+
+// Turkish IBAN Receipt Confirmation Modal (Real Netlify Form)
+function openIbanReceiptModal(defaultGameId) {
+  const ib = (CFG.donations && CFG.donations.turkishIban) || {};
+  const bnd = (CFG.donations && CFG.donations.bundle) || DEFAULT_CFG.donations.bundle;
+  const optionsHtml = [
+    `<option value="MEGA_BUNDLE" ${defaultGameId === "MEGA_BUNDLE" ? "selected" : ""}>🎁 الباقة الشاملة لجميع الـ ${G.length} تعريبات ($${bnd.priceUsd || 9.99} بدل $${bnd.regularTotalUsd || 18})</option>`,
+    ...G.map(g => `<option value="${esc(g.id)}" ${defaultGameId === g.id ? "selected" : ""}>${esc(g.en)} — ${esc(g.ar)} ($${getGamePrice(g)})</option>`)
+  ].join("");
+
+  pn.innerHTML = `
+    <button class="close-btn" id="x" onclick="closeModal()" aria-label="إغلاق">✕</button>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;padding-left:40px">
+      <span style="font-size:28px">🏦</span>
+      <div>
+        <h2 style="font-size:21px;margin:0">تأكيد تحويل IBAN التركي واستلام التعريب</h2>
+        <span class="mu" style="font-size:12px">بعد التحويل عبر FAST / Havale / EFT أرسل البيانات هنا ليصلك الرابط المباشر + التنازل عن الحقوق</span>
+      </div>
+    </div>
+    <div class="iban-box" style="margin-bottom:14px">
+      <div class="iban-meta"><strong>البنك:</strong> ${esc(ib.bankName || "-")} • <strong>المستفيد:</strong> ${esc(ib.accountHolder || "-")}</div>
+      <div class="iban-number">${esc(ib.iban || "")}</div>
+      <button type="button" class="btn sc sm" style="align-self:flex-start;margin-top:4px" onclick="copyTurkishIban(this)">📋 نسخ رقم الـ IBAN</button>
+    </div>
+    <form onsubmit="handleIbanReceiptSubmit(event)" style="display:flex;flex-direction:column;gap:10px">
+      <div>
+        <label style="display:block;font-size:13px;margin-bottom:4px;color:var(--tx)">اختر التعريب أو الباقة:</label>
+        <select id="iban-game" required style="width:100%;padding:10px;border-radius:8px;background:var(--sf2);border:1px solid var(--ln);color:var(--tx)">${optionsHtml}</select>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+        <div>
+          <label style="display:block;font-size:13px;margin-bottom:4px;color:var(--tx)">اسم صاحب التحويل (كما في البنك):</label>
+          <input type="text" id="iban-buyer" required placeholder="الاسم الكامل" style="width:100%;padding:10px;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid var(--ln);color:var(--tx)">
+        </div>
+        <div>
+          <label style="display:block;font-size:13px;margin-bottom:4px;color:var(--tx)">المبلغ المحوّل (بالليرة TL أو $):</label>
+          <input type="text" id="iban-amount" required placeholder="مثال: 110 TL أو $3" style="width:100%;padding:10px;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid var(--ln);color:var(--tx)">
+        </div>
+      </div>
+      <div>
+        <label style="display:block;font-size:13px;margin-bottom:4px;color:var(--tx)">رقم مرجع التحويل (Dekont / FAST Ref أو وقت التحويل):</label>
+        <input type="text" id="iban-ref" required placeholder="مثال: FAST #123456 أو الساعة 14:25" style="width:100%;padding:10px;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid var(--ln);color:var(--tx)">
+      </div>
+      <div>
+        <label style="display:block;font-size:13px;margin-bottom:4px;color:var(--tx)">وسيلة استلام الملف المباشر (إيميل / تيليجرام / واتساب):</label>
+        <input type="text" id="iban-contact" required placeholder="مثال: email@example.com أو @telegram أو +90..." style="width:100%;padding:10px;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid var(--ln);color:var(--tx)">
+      </div>
+      <div>
+        <label style="display:block;font-size:13px;margin-bottom:4px;color:var(--tx)">ملاحظات (اختياري):</label>
+        <textarea id="iban-notes" rows="2" placeholder="إن أردت تفعيل كود دعم لبرنامج NextGen Launcher اذكره هنا..." style="width:100%;padding:10px;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid var(--ln);color:var(--tx)"></textarea>
+      </div>
+      <button type="submit" id="iban-submit-btn" class="btn pr" style="margin-top:6px">📩 إرسال تأكيد التحويل لاستلام التعريب وحقوقه</button>
+    </form>
+  `;
+  mdl.classList.add("on");
+  document.body.style.overflow = "hidden";
+}
+
+async function handleIbanReceiptSubmit(e) {
+  e.preventDefault();
+  const btn = document.getElementById("iban-submit-btn");
+  if (btn) { btn.disabled = true; btn.textContent = "⏳ جاري تسجيل تأكيد التحويل..."; }
+  const res = await submitNetlifyForm("mnova-iban-receipt", {
+    buyer_name: ($("#iban-buyer") && $("#iban-buyer").value) || "",
+    game_choice: ($("#iban-game") && $("#iban-game").value) || "",
+    transfer_amount: ($("#iban-amount") && $("#iban-amount").value) || "",
+    transfer_ref: ($("#iban-ref") && $("#iban-ref").value) || "",
+    delivery_contact: ($("#iban-contact") && $("#iban-contact").value) || "",
+    notes: ($("#iban-notes") && $("#iban-notes").value) || ""
+  });
+  pn.innerHTML = `
+    <button class="close-btn" id="x" onclick="closeModal()" aria-label="إغلاق">✕</button>
+    <div style="text-align:center;padding:30px 10px">
+      <div style="font-size:52px;margin-bottom:12px">${res.ok ? "✅" : "⚠️"}</div>
+      <h2 style="font-size:23px;color:var(--ac);margin-bottom:8px">${res.ok ? "تم استلام تأكيد التحويل بنجاح!" : "تعذّر الإرسال مؤقتاً"}</h2>
+      <p style="font-size:15px;color:var(--tx);line-height:1.7;max-width:520px;margin:0 auto 20px">
+        ${res.ok
+          ? "سيتم التحقق من الحوالة وإرسال رابط التحميل المباشر السريع (بدون إعلانات) مع تأكيد التنازل الكامل عن الحقوق إلى وسيلة التواصل التي أدخلتها بأسرع وقت."
+          : "حدث خطأ في الاتصال — أعد المحاولة بعد قليل."}
+      </p>
+      <button class="btn pr" onclick="closeModal()">العودة للموقع</button>
+    </div>
+  `;
+}
+
+// Custom Commission / Channel Sponsorship Modal (Real Netlify Form)
+function openCommissionModal() {
+  pn.innerHTML = `
+    <button class="close-btn" id="x" onclick="closeModal()" aria-label="إغلاق">✕</button>
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px;padding-left:40px">
+      <span style="font-size:28px">🎯</span>
+      <div>
+        <h2 style="font-size:21px;margin:0">طلب تعريب خاص أو رعاية باسم قناتك</h2>
+        <span class="mu" style="font-size:12px">للأفراد، الستريمرز، قنوات اليوتيوب، ومطوّري الألعاب</span>
+      </div>
+    </div>
+    <p style="font-size:13.5px;color:var(--mu);line-height:1.65;margin-bottom:14px">
+      اختر نوع الخدمة المطلوبة وسنردّ عليك بالتسعير الدقيق والمدة الزمنية (تبدأ باقات الألعاب الصغيرة ورعاية القنوات من <strong>$25</strong>).
+    </p>
+    <form onsubmit="handleCommissionSubmit(event)" style="display:flex;flex-direction:column;gap:10px">
+      <div>
+        <label style="display:block;font-size:13px;margin-bottom:4px;color:var(--tx)">نوع الطلب:</label>
+        <select id="com-type" required style="width:100%;padding:10px;border-radius:8px;background:var(--sf2);border:1px solid var(--ln);color:var(--tx)">
+          <option value="تعريب لعبة إندي صغيرة (بدءاً من $25)">🎮 تعريب لعبة إندي صغيرة بالطلب (بدءاً من $25)</option>
+          <option value="تعريب لعبة قصة متوسطة/كبيرة">📖 تعريب لعبة قصة متوسطة أو كبيرة (عرض سعر مخصص)</option>
+          <option value="رعاية قناة يوتيوب / ستريمر في شاشة البداية">🎬 رعاية تعريب ووضع شعار قناتك في اللعبة وفيديو الاستعراض</option>
+          <option value="شراء حقوق حصرية كاملة لتعريب موجود">💎 شراء حقوق استخدام/نشر حصرية لتعريب متوفر</option>
+        </select>
+      </div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+        <div>
+          <label style="display:block;font-size:13px;margin-bottom:4px;color:var(--tx)">اسمك أو اسم قناتك:</label>
+          <input type="text" id="com-client" required placeholder="الاسم / القناة" style="width:100%;padding:10px;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid var(--ln);color:var(--tx)">
+        </div>
+        <div>
+          <label style="display:block;font-size:13px;margin-bottom:4px;color:var(--tx)">الميزانية التقريبية ($):</label>
+          <input type="text" id="com-budget" placeholder="مثال: $30 - $80" style="width:100%;padding:10px;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid var(--ln);color:var(--tx)">
+        </div>
+      </div>
+      <div>
+        <label style="display:block;font-size:13px;margin-bottom:4px;color:var(--tx)">اسم اللعبة (إن وُجدت):</label>
+        <input type="text" id="com-game" required placeholder="مثال: Hollow Knight أو رابط Steam" style="width:100%;padding:10px;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid var(--ln);color:var(--tx)">
+      </div>
+      <div>
+        <label style="display:block;font-size:13px;margin-bottom:4px;color:var(--tx)">وسيلة التواصل (إيميل / تيليجرام / ديسكورد / واتساب):</label>
+        <input type="text" id="com-contact" required placeholder="مثال: @username أو email@example.com" style="width:100%;padding:10px;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid var(--ln);color:var(--tx)">
+      </div>
+      <div>
+        <label style="display:block;font-size:13px;margin-bottom:4px;color:var(--tx)">تفاصيل إضافية:</label>
+        <textarea id="com-details" rows="3" placeholder="اكتب المتجر (Steam/Epic)، وهل تريد حقوقاً كاملة أم نشراً مشتركاً..." style="width:100%;padding:10px;border-radius:8px;background:rgba(255,255,255,0.06);border:1px solid var(--ln);color:var(--tx)"></textarea>
+      </div>
+      <button type="submit" id="com-submit-btn" class="btn pr" style="margin-top:6px">🎯 إرسال طلب التعريب الخاص الآن</button>
+    </form>
+  `;
+  mdl.classList.add("on");
+  document.body.style.overflow = "hidden";
+}
+
+async function handleCommissionSubmit(e) {
+  e.preventDefault();
+  const btn = document.getElementById("com-submit-btn");
+  if (btn) { btn.disabled = true; btn.textContent = "⏳ جاري إرسال الطلب..."; }
+  const res = await submitNetlifyForm("mnova-custom-commission", {
+    client_name: ($("#com-client") && $("#com-client").value) || "",
+    package_type: ($("#com-type") && $("#com-type").value) || "",
+    game_name: ($("#com-game") && $("#com-game").value) || "",
+    budget: ($("#com-budget") && $("#com-budget").value) || "",
+    contact: ($("#com-contact") && $("#com-contact").value) || "",
+    details: ($("#com-details") && $("#com-details").value) || ""
+  });
+  pn.innerHTML = `
+    <button class="close-btn" id="x" onclick="closeModal()" aria-label="إغلاق">✕</button>
+    <div style="text-align:center;padding:30px 10px">
+      <div style="font-size:52px;margin-bottom:12px">${res.ok ? "🚀" : "⚠️"}</div>
+      <h2 style="font-size:23px;color:var(--ac);margin-bottom:8px">${res.ok ? "تم استلام طلبك بنجاح!" : "تعذّر الإرسال مؤقتاً"}</h2>
+      <p style="font-size:15px;color:var(--tx);line-height:1.7;max-width:520px;margin:0 auto 20px">
+        ${res.ok
+          ? "سيقوم فريق MNOVA بفحص محرك اللعبة وحجم النصوص والتواصل معك بالعرض والمدة الزمنية في أقرب وقت."
+          : "حدث خطأ في الاتصال — أعد المحاولة بعد قليل."}
       </p>
       <button class="btn pr" onclick="closeModal()">العودة للموقع</button>
     </div>
@@ -2337,6 +2749,14 @@ function handleRequestSubmit(e) {
 function handleHashRoute() {
   const rawHash = location.hash.replace("#", "");
   if (!rawHash) return;
+  if (rawHash === "iban-confirm") {
+    setTimeout(() => openIbanReceiptModal(), 150);
+    return;
+  }
+  if (rawHash === "commission") {
+    setTimeout(() => openCommissionModal(), 150);
+    return;
+  }
   if (rawHash === "community" || rawHash === "support") {
     setTimeout(() => {
       document.querySelector("#" + rawHash)?.scrollIntoView({ behavior: "smooth" });
@@ -2359,6 +2779,26 @@ function handleHashRoute() {
         setTimeout(() => { pn.scrollTop = pn.scrollHeight; }, 120);
       }
     }, 150);
+  }
+}
+
+function initAnalytics() {
+  if (isSearchCrawler() || isLocalEnv()) return;
+  const an = (CFG && CFG.analytics) || {};
+  if (an.cloudflareBeaconToken && !document.getElementById("mnova-cf-analytics")) {
+    const s = document.createElement("script");
+    s.id = "mnova-cf-analytics";
+    s.defer = true;
+    s.src = "https://static.cloudflareinsights.com/beacon.min.js";
+    s.setAttribute("data-cf-beacon", JSON.stringify({ token: String(an.cloudflareBeaconToken).trim() }));
+    document.head.appendChild(s);
+  }
+  if (an.clarityProjectId && !document.getElementById("mnova-clarity")) {
+    const cid = String(an.clarityProjectId).trim();
+    const s = document.createElement("script");
+    s.id = "mnova-clarity";
+    s.textContent = `(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script",${JSON.stringify(cid)});`;
+    document.head.appendChild(s);
   }
 }
 
@@ -2391,6 +2831,7 @@ function renderAll() {
   renderSpotlights();
   renderSupportSection();
   draw();
+  hydrateVotes();
   ensureCatalogAdSlot();
 }
 
@@ -2406,6 +2847,7 @@ async function init() {
     console.warn("Could not load config.json dynamically, using fallback:", err);
   }
   renderAll();
+  initAnalytics();
   handleHashRoute();
   enforceAdBlockDetector(false);
 }
