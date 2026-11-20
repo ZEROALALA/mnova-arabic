@@ -36,10 +36,12 @@
 | **The Pale Beyond** *(ما وراء الشحوب — بقاء سردي)* | ✅ مكتمل 100% | `19.3 MB` | [صفحة The Pale Beyond](https://mnova-arabic.netlify.app/games/the-pale-beyond-arabic/) | [تحميل مجاني ⚡](https://lootdest.org/s?aWcSLdpj) | [شراء `$2` 💎](https://m-amin-alobidan.itch.io/the-pale-beyond-arabic) |
 | **Star Wars Jedi: Fallen Order** *(حرب النجوم جيدي)* | ✅ مكتمل 100% | `11.4 MB` | [صفحة Jedi Fallen Order](https://mnova-arabic.netlify.app/games/jedi-fallen-order-arabic/) | [تحميل مجاني ⚡](https://loot-link.com/s?aMdqYdUm) | [شراء `$2` 💎](https://m-amin-alobidan.itch.io/jedi-fallen-order-arabic) |
 
+> 🎁 **باقة التوفير الشاملة (خصم 44%):** احصل على **جميع تعريبات MNOVA الـ 7 دفعة واحدة مقابل `$9.99` فقط** (بدلاً من `$18`) مع تنازل كامل عن الحقوق ← [**شراء الباقة على itch.io ↗**](https://itch.io/s/221914/mnova-complete-arabic-localization-bundle-all-7-projects)
+
 ---
 
 ## 🛠️ مميزات تعريبات فريق MNOVA
-* **تثبيت آمن بضغطة زر:** كل حزمة تحتوي على مثبّت تلقائي (`NarakaArabizer_AllInOne.exe` أو `SteamArabicInstaller.exe` أو ملفات `.bat` ذكية) يتعرّف تلقائياً على مجلد اللعبة في Steam أو Epic Games أو EA.
+* **تثبيت آمن بضغطة زر:** كل حزمة تحتوي على مثبّت تلقائي (`NarakaArabizer_AllInOne.exe` أو `SteamArabicInstaller.exe` أو ملفات `.bat` ذكية) يتعرّف تلقائياً على مجلد اللعبة في Steam أو Epic Games أو Netmarble أو EA.
 * **نسخ احتياطي تلقائي (`Orig_Backup`):** إمكانية استعادة ملفات اللعبة الأصلية في أي لحظة بأمان تام.
 * **معالجة دقيقة للخط العربي (RTL + Reshaping):** خطوط مصقولة واضحة للقوائم، الحوارات، المهارات، الوثائق، والعروض السينمائية.
 * **ربط قادم مع مشغّل NextGen Launcher:** [صفحة المشغّل على itch.io](https://m-amin-alobidan.itch.io/nextgen-launcher).
@@ -48,7 +50,7 @@
 
 ## ⚖️ سياسة الحقوق والاستخدام الواضحة
 1. **التحميل المجاني للعب الشخصي (LootLabs):** خطوتان إعلانيتان خفيفتان تمنحانك كامل ملفات التعريب مجاناً 100% للاستخدام واللعب الشخصي فقط (مع بقاء حقوق التعريب لفريق MNOVA).
-2. **الشراء المباشر بالمال (`$5` لناراكا الأونلاين / `$2` لبقية التعريبات عبر itch.io أو IBAN التركي):** بمجرد الشراء بالمال يتنازل فريق MNOVA عن جميع حقوقه في ملفات وأداة التعريب لتصبح **مِلكاً كاملاً للمشتري** (تتطلب الحزم وجود نسخة اللعبة الأصلية على جهاز المستخدم).
+2. **الشراء المباشر بالمال (`$5` لناراكا / `$3` لـ MONGIL / `$2` للبقية، أو `$9.99` للباقة الشاملة عبر itch.io أو IBAN التركي):** بمجرد الشراء بالمال يتنازل فريق MNOVA عن جميع حقوقه في ملفات وأداة التعريب لتصبح **مِلكاً كاملاً للمشتري** (تتطلب الحزم وجود نسخة اللعبة الأصلية على جهاز المستخدم).
 
 ---
 

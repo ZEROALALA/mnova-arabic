@@ -12,7 +12,7 @@
     "contactEmail": ""
   },
   "analytics": {
-    "cloudflareBeaconToken": "",
+    "cloudflareBeaconToken": "eb21e32b772e4af0a69b3147c6b29c06",
     "clarityProjectId": ""
   },
   "donations": {
@@ -22,8 +22,8 @@
       "enabled": true,
       "priceUsd": 9.99,
       "regularTotalUsd": 18,
-      "itchBundleUrl": "https://m-amin-alobidan.itch.io",
-      "note": "اطلب أو اشترِ باقة جميع تعريبات MNOVA الـ 7 دفعة واحدة بسعر موفّر ($9.99 بدلاً من $18) شاملة التنازل الكامل عن الحقوق."
+      "itchBundleUrl": "https://itch.io/s/221914/mnova-complete-arabic-localization-bundle-all-7-projects",
+      "note": "اشترِ باقة جميع تعريبات MNOVA الـ 7 دفعة واحدة على itch.io أو عبر IBAN بسعر موفّر ($9.99 بدلاً من $18 — خصم 44%) شاملة التنازل الكامل عن الحقوق."
     },
     "commissions": {
       "enabled": true,

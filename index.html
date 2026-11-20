@@ -1421,8 +1421,8 @@ function renderSupportSection() {
           </div>
         </div>
         <div style="display:flex;gap:8px;flex-wrap:wrap">
-          <button type="button" class="btn pr" style="flex:1" onclick="openIbanReceiptModal('MEGA_BUNDLE')">🎁 اطلب الباقة الشاملة ($${esc(bnd.priceUsd || 9.99)})</button>
-          <a class="btn sc" href="${esc(isValidUrl(bnd.itchBundleUrl) ? bnd.itchBundleUrl : (itchOk ? d.itchIoProfileUrl : '#support'))}" target="_blank" rel="noopener">متجر itch.io ↗</a>
+          <a class="btn pr" style="flex:1" href="${esc(isValidUrl(bnd.itchBundleUrl) ? bnd.itchBundleUrl : (itchOk ? d.itchIoProfileUrl : '#support'))}" target="_blank" rel="noopener">🎁 شراء الباقة الشاملة ($${esc(bnd.priceUsd || 9.99)} • itch.io) ↗</a>
+          <button type="button" class="btn sup" onclick="openIbanReceiptModal('MEGA_BUNDLE')">🏦 شراء الباقة عبر IBAN</button>
         </div>
       </div>
 
