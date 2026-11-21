@@ -61,7 +61,7 @@
     },
     "adsterra": {
       "enabled": true,
-      "socialBarSrc": "https://bellnewyork.org/14/8d257805496056c522bab0add6d32129",
+      "socialBarSrc": "https://bellnewyork.org/14/91905b83dbc7f53526b04afb40e9d87b",
       "popunderSrc": ""
     },
     "monetag": {
@@ -71,11 +71,11 @@
       "directSmartLink": ""
     },
     "slots": {
-      "catalogBannerHtml": "<script>atOptions={'key':'3d62ebad6f52506f3f2110d48d81b18b','format':'iframe','height':90,'width':728,'params':{}};</script><script src=\"https://bellnewyork.org/22/3d62ebad6f52506f3f2110d48d81b18b\"></script>",
+      "catalogBannerHtml": "<script>atOptions={'key':'ab12fcfde1de9e2c2c1434ba65ea3e5f','format':'iframe','height':90,'width':728,'params':{}};</script><script src=\"https://bellnewyork.org/22/ab12fcfde1de9e2c2c1434ba65ea3e5f\"></script>",
       "modalWaitBannerHtml": "",
-      "cornerLeftHtml": "<script>atOptions={'key':'9e2af39d1feff4a3e602b7555f863832','format':'iframe','height':300,'width':160,'params':{}};</script><script src=\"https://bellnewyork.org/22/9e2af39d1feff4a3e602b7555f863832\"></script>",
+      "cornerLeftHtml": "<script>atOptions={'key':'37a2e2d29f0cc58ef7a70217abd92b57','format':'iframe','height':300,'width':160,'params':{}};</script><script src=\"https://bellnewyork.org/22/37a2e2d29f0cc58ef7a70217abd92b57\"></script>",
       "cornerRightHtml": "",
-      "floatingBarHtml": "<script>atOptions={'key':'cf316cdb6243954231223b2cb1172291','format':'iframe','height':50,'width':320,'params':{}};</script><script src=\"https://bellnewyork.org/22/cf316cdb6243954231223b2cb1172291\"></script>"
+      "floatingBarHtml": "<script>atOptions={'key':'9950ceadd5c33dd25e2d92615e18552c','format':'iframe','height':50,'width':320,'params':{}};</script><script src=\"https://bellnewyork.org/22/9950ceadd5c33dd25e2d92615e18552c\"></script>"
     }
   },
   "games": {
