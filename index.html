@@ -659,7 +659,7 @@ footer a{color:var(--tx);text-decoration:underline}
       </a>
       <a class="seo-link-card" href="games/mongil-star-dive-arabic/">
         <strong>تعريب لعبة MONGIL: STAR DIVE (مونجيل: غوص النجوم) بالعربي</strong>
-        <span>تعريب شامل للحوارات والقصص والشخصيات والإعدادات مع مثبّت تلقائي لجميع اللابتوبات ($3 شراء أو مجاني).</span>
+        <span>74,225 سطراً + ترجمة الفيديوهات وخطوط HarfBuzz عبر أداة GUI مستقلة لجميع اللابتوبات ($3 شراء أو مجاني).</span>
       </a>
       <a class="seo-link-card" href="games/ex-natura-arabic/">
         <strong>تعريب لعبة Ex Natura: Nature Corrupted (إكس ناتورا) بالعربي</strong>
@@ -808,7 +808,8 @@ const IMGS = {
   "mongil_3": "assets/gallery/mongil_3.webp",
   "mongil_4": "assets/gallery/mongil_4.webp",
   "mongil_5": "assets/gallery/mongil_5.webp",
-  "mongil_6": "assets/gallery/mongil_6.webp"
+  "mongil_6": "assets/gallery/mongil_6.webp",
+  "mongil_7": "assets/gallery/mongil_7.webp"
 };
 
 const DEFAULT_CFG = {
@@ -954,18 +955,19 @@ const BASE_G = [
     priceUsd: 3,
     plat: "PC (Epic Games / Netmarble Launcher)",
     v: "1.0 رسمي",
-    tv: "1.0 كامل + مثبت ذكي شامل لجميع اللابتوبات",
-    sz: "14.0 MB",
+    tv: "1.1 شامل (74,225 سطراً + ترجمة الفيديوهات + أداة GUI مستقلة)",
+    sz: "14.3 MB",
     d: "نوفمبر 2026",
     tr: "فريق MNOVA للتعريب",
     featured: true,
     spotClass: "spotlight-mongil",
-    spotTag: "✨ تعريب جديد • 4K Ultra HD • أكشن RPG أنمي (7 صور)",
-    spotDesc: "تعريب عربي شامل للعبة الأكشن وترويض الوحوش MONGIL: STAR DIVE: حوارات القصة، ملفات الشخصيات، المهام، والإعدادات مع مثبّت ذكي متوافق مع كل اللابتوبات.",
+    spotTag: "✨ تعريب جديد • 4K Ultra HD • أداة GUI مستقلة (8 صور)",
+    spotDesc: "تعريب عربي شامل (74,225 سطراً + ترجمة الفيديوهات وخطوط HarfBuzz العربية) عبر برنامج تثبيت بواجهة عربية احترافية مستقلة تعمل على أي لابتوب بضغطة زر.",
     coverImg: IMGS.mongil_cover,
-    x: "تعريب عربي شامل واحترافي للعبة الأكشن RPG وترويض الوحوش MONGIL: STAR DIVE من فريق MNOVA للتعريب. يغطي التعريب القصة والحوارات السينمائية، ملفات الشخصيات وقدراتها (مثل كلاود وفيرنا)، أسماء الوحوش والمناطق والمهام، وقوائم الإعدادات والرسوميات بالكامل بخط عربي مريح، مع مثبّت تلقائي ذكي يتعرف على اللعبة عبر Epic و Netmarble في جميع اللابتوبات.",
+    x: "تعريب عربي شامل واحترافي للعبة الأكشن RPG وترويض الوحوش MONGIL: STAR DIVE من فريق MNOVA للتعريب: مدمج بالكامل (74,225 سطراً + ترجمة الفيديوهات + خطوط HarfBuzz العربية + حفظ لغة الصوت الياباني ومزامنة GameLanguage تلقائياً) داخل أداة تثبيت مستقلة بواجهة عربية احترافية (تفعيل_تعريب_MONGIL_STAR_DIVE.exe) تتضمّن الكشف التلقائي عبر Netmarble و Epic Games، وفحص SHA-256، واختبار محاكاة لابتوب ثانٍ، وزر استعادة النسخة الأصلية.",
     images: [
       { title: "الغلاف الفني بدقة 4K Ultra HD — MONGIL: STAR DIVE", src: IMGS.mongil_cover },
+      { title: "واجهة أداة تفعيل_تعريب_MONGIL_STAR_DIVE.exe المستقلة (74,225 سطراً + فحص SHA-256 + محاكاة لابتوب ثاني)", src: IMGS.mongil_7 },
       { title: "القتال والمواجهات الحيّة في مستنقعات غابة فينتوس بالعربية", src: IMGS.mongil_1 },
       { title: "الملف الشخصي والخصائص والمهارات للشخصيات (كلاود - المدمّر)", src: IMGS.mongil_2 },
       { title: "مركز تجمع مروضي المونسترلينغ والمهام بالعربية", src: IMGS.mongil_3 },
@@ -974,11 +976,12 @@ const BASE_G = [
       { title: "قائمة الإعدادات والرسوميات المعرّبة بالكامل", src: IMGS.mongil_6 }
     ],
     steps: [
-      "حمّل حزمة <code>Minova_Mongil_Star_Dive_Arabic_v1.0.zip</code> (14.0 MB) وفك الضغط عنها بالكامل، وتأكد من إغلاق اللعبة.",
-      "شغّل ملف <code>تفعيل_تعريب_MONGIL_STAR_DIVE.bat</code> ليكتشف مسار اللعبة تلقائياً في Netmarble Launcher أو Epic Games عبر كل الأقراص.",
-      "ينسخ المثبّت الحزمة إلى <code>BigCat\\Content\\Paks\\~mods</code> مع التحقق بالبصمة الرقمية SHA-256 وضبط لغة الواجهة على <code>EN</code> لتظهر العربية فوراً على أي لابتوب.",
-      "افتح اللعبة واستمتع بالتجربة الكاملة بالعربي! (ولاستعادة اللغة الأصلية شغّل <code>استعادة_الملفات_الأصلية.bat</code> في أي وقت)."
+      "حمّل حزمة <code>Minova_Mongil_Star_Dive_Arabic_v1.0.zip</code> (14.3 MB) وفك الضغط عنها بالكامل، وتأكد من إغلاق اللعبة.",
+      "شغّل الأداة المستقلة <code>تفعيل_تعريب_MONGIL_STAR_DIVE.exe</code> — تكتشف مسار اللعبة تلقائياً في Netmarble أو Epic Games (أو اضغط اختيار يدوي وحدد مجلد <code>STARDIVEE</code>).",
+      "اضغط زر <strong>تثبيت التعريب الشامل + الخط العربي (100%)</strong> لتفعيل 74,225 سطراً مع خطوط HarfBuzz وفحص السلامة SHA-256 ومزامنة لغة النص.",
+      "افتح اللعبة واستمتع بالتجربة الكاملة بالعربي! (ولإرجاع اللعبة للأصل شغّل نفس البرنامج واضغط <strong>استعادة النسخة الأصلية</strong>)."
     ],
+    youtubeVideoUrl: "https://www.youtube.com/watch?v=x5m5WtSpBgA",
     localZip: "downloads/Minova_Mongil_Star_Dive_Arabic_v1.0.zip"
   },
   {

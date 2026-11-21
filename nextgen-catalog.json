@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "provider": "MNOVA Localization Hub",
   "configUrl": "config.json",
-  "updatedAt": "2026-11-20",
+  "updatedAt": "2026-11-21",
   "items": [
     {
       "id": "naraka",
@@ -28,11 +28,10 @@
       "priceUsd": 3,
       "platform": "PC (Epic Games / Netmarble Launcher)",
       "gameVersion": "1.0",
-      "patchVersion": "1.0 كامل + مثبت ذكي شامل لجميع اللابتوبات",
-      "size": "14.0 MB",
-      "installerType": "bat",
-      "installerScript": "تفعيل_تعريب_MONGIL_STAR_DIVE.bat",
-      "uninstallerScript": "استعادة_الملفات_الأصلية.bat",
+      "patchVersion": "1.1 شامل (74,225 سطراً + ترجمة الفيديوهات + أداة GUI مستقلة)",
+      "size": "14.3 MB",
+      "installerType": "exe",
+      "installerScript": "تفعيل_تعريب_MONGIL_STAR_DIVE.exe",
       "defaultNetmarbleSubdir": "STARDIVEE"
     },
     {
