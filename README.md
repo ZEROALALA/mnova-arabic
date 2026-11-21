@@ -6,7 +6,7 @@
 
 **مركز تحميل تعريبات ألعاب الحاسب الشخصي (PC) ومنصة Steam باللغة العربية — مجاناً 100% للعب الشخصي، أو بالشراء المباشر مع تنازل كامل عن الحقوق.**
 
-[![الموقع الرسمي MNOVA](https://img.shields.io/badge/%D8%A7%D9%84%D9%85%D9%88%D9%82%D8%B9_%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A-mnova--arabic.netlify.app-ffb72b?style=for-the-badge)](https://mnova-arabic.netlify.app/)
+[![الموقع الرسمي MNOVA](https://img.shields.io/badge/%D8%A7%D9%84%D9%85%D9%88%D9%82%D8%B9_%D8%A7%D9%84%D8%B1%D8%B3%D9%85%D9%8A-mnova--arabic.netlify.app-ffb72b?style=for-the-badge)](https://mnova-arabic.pages.dev/)
 [![قناة يوتيوب MNOVA](https://img.shields.io/badge/YouTube-@MNOVA__Arabic-FF0000?style=for-the-badge&logo=youtube)](https://www.youtube.com/@MNOVA_Arabic)
 [![صفحة itch.io](https://img.shields.io/badge/itch.io-m--amin--alobidan-FA5C5C?style=for-the-badge&logo=itch.io)](https://m-amin-alobidan.itch.io)
 
@@ -15,8 +15,8 @@
 ---
 
 ## 🌐 روابط الوصول السريع
-* **الموقع الرسمي الكامل:** https://mnova-arabic.netlify.app/
-* **دليل مكتبة التعريبات:** https://mnova-arabic.netlify.app/games/
+* **الموقع الرسمي الكامل:** https://mnova-arabic.pages.dev/
+* **دليل مكتبة التعريبات:** https://mnova-arabic.pages.dev/games/
 * **قناة اليوتيوب الرسمية:** https://www.youtube.com/@MNOVA_Arabic
 * **فيديو استعراض NARAKA: BLADEPOINT (2K60):** https://www.youtube.com/watch?v=EAxnnBAkZHE
 * **فيديو استعراض وشرح تعريب Steam:** https://www.youtube.com/watch?v=GLY4n7OfQ-I
@@ -28,13 +28,13 @@
 
 | اللعبة / المنصة | الحالة | الحجم | صفحة الشرح والتحميل المباشر (SEO) | التحميل المجاني (LootLabs) | شراء وتنازل الحقوق (itch.io) |
 | :--- | :--- | :---: | :--- | :---: | :---: |
-| **NARAKA: BLADEPOINT** *(ناراكا: بليد بوينت — أونلاين)* | 🔄 مستمر (`362,699+` نص) | `172.6 MB` | [صفحة تعريب ناراكا](https://mnova-arabic.netlify.app/games/naraka-bladepoint-arabic/) | [تحميل مجاني ⚡](https://loot-link.com/s?zRIEpAsb) | [شراء `$5` 💎](https://m-amin-alobidan.itch.io/naraka-arabic) |
-| **MONGIL: STAR DIVE** *(مونجيل: غوص النجوم — Epic / Netmarble)* | ✅ مكتمل 100% | `14.3 MB` | [صفحة تعريب MONGIL: STAR DIVE](https://mnova-arabic.netlify.app/games/mongil-star-dive-arabic/) | [تحميل مجاني ⚡](https://lootdest.org/s?T26XU0ku) | [شراء `$3` 💎](https://m-amin-alobidan.itch.io/mongil-star-dive-arabic) |
-| **Nobody Wants to Die** *(لا أحد يريد أن يموت — UE5 / GUI `.exe`)* | ✅ مكتمل 100% | `209.9 MB` | [صفحة Nobody Wants to Die](https://mnova-arabic.netlify.app/games/nobody-wants-to-die-arabic/) | [تحميل مجاني ⚡](https://lootdest.org/s?HB2yrhVM) | [شراء `$2` 💎](https://m-amin-alobidan.itch.io/nobody-wants-to-die-arabic) |
-| **Steam Client Arabic** *(تعريب منصة ستيم لنظام Windows)* | 🔄 مستمر (دعم RTL) | `0.8 MB` | [صفحة تعريب ستيم](https://mnova-arabic.netlify.app/games/steam-arabic/) | [تحميل مجاني ⚡](https://lootdest.org/s?2lDnErcN) | [شراء `$2` 💎](https://m-amin-alobidan.itch.io/steam-arabic) |
-| **Ex Natura: Nature Corrupted** *(إكس ناتورا: الطبيعة الفاسدة)* | ✅ مكتمل 100% | `183.9 MB` | [صفحة Ex Natura](https://mnova-arabic.netlify.app/games/ex-natura-arabic/) | [تحميل مجاني ⚡](https://loot-link.com/s?typJ8L1j) | [شراء `$2` 💎](https://m-amin-alobidan.itch.io/ex-natura-arabic) |
-| **The Pale Beyond** *(ما وراء الشحوب — بقاء سردي)* | ✅ مكتمل 100% | `19.3 MB` | [صفحة The Pale Beyond](https://mnova-arabic.netlify.app/games/the-pale-beyond-arabic/) | [تحميل مجاني ⚡](https://lootdest.org/s?aWcSLdpj) | [شراء `$2` 💎](https://m-amin-alobidan.itch.io/the-pale-beyond-arabic) |
-| **Star Wars Jedi: Fallen Order** *(حرب النجوم جيدي)* | ✅ مكتمل 100% | `11.4 MB` | [صفحة Jedi Fallen Order](https://mnova-arabic.netlify.app/games/jedi-fallen-order-arabic/) | [تحميل مجاني ⚡](https://loot-link.com/s?aMdqYdUm) | [شراء `$2` 💎](https://m-amin-alobidan.itch.io/jedi-fallen-order-arabic) |
+| **NARAKA: BLADEPOINT** *(ناراكا: بليد بوينت — أونلاين)* | 🔄 مستمر (`362,699+` نص) | `172.6 MB` | [صفحة تعريب ناراكا](https://mnova-arabic.pages.dev/games/naraka-bladepoint-arabic/) | [تحميل مجاني ⚡](https://loot-link.com/s?zRIEpAsb) | [شراء `$5` 💎](https://m-amin-alobidan.itch.io/naraka-arabic) |
+| **MONGIL: STAR DIVE** *(مونجيل: غوص النجوم — Epic / Netmarble)* | ✅ مكتمل 100% | `14.3 MB` | [صفحة تعريب MONGIL: STAR DIVE](https://mnova-arabic.pages.dev/games/mongil-star-dive-arabic/) | [تحميل مجاني ⚡](https://lootdest.org/s?T26XU0ku) | [شراء `$3` 💎](https://m-amin-alobidan.itch.io/mongil-star-dive-arabic) |
+| **Nobody Wants to Die** *(لا أحد يريد أن يموت — UE5 / GUI `.exe`)* | ✅ مكتمل 100% | `209.9 MB` | [صفحة Nobody Wants to Die](https://mnova-arabic.pages.dev/games/nobody-wants-to-die-arabic/) | [تحميل مجاني ⚡](https://lootdest.org/s?HB2yrhVM) | [شراء `$2` 💎](https://m-amin-alobidan.itch.io/nobody-wants-to-die-arabic) |
+| **Steam Client Arabic** *(تعريب منصة ستيم لنظام Windows)* | 🔄 مستمر (دعم RTL) | `0.8 MB` | [صفحة تعريب ستيم](https://mnova-arabic.pages.dev/games/steam-arabic/) | [تحميل مجاني ⚡](https://lootdest.org/s?2lDnErcN) | [شراء `$2` 💎](https://m-amin-alobidan.itch.io/steam-arabic) |
+| **Ex Natura: Nature Corrupted** *(إكس ناتورا: الطبيعة الفاسدة)* | ✅ مكتمل 100% | `183.9 MB` | [صفحة Ex Natura](https://mnova-arabic.pages.dev/games/ex-natura-arabic/) | [تحميل مجاني ⚡](https://loot-link.com/s?typJ8L1j) | [شراء `$2` 💎](https://m-amin-alobidan.itch.io/ex-natura-arabic) |
+| **The Pale Beyond** *(ما وراء الشحوب — بقاء سردي)* | ✅ مكتمل 100% | `19.3 MB` | [صفحة The Pale Beyond](https://mnova-arabic.pages.dev/games/the-pale-beyond-arabic/) | [تحميل مجاني ⚡](https://lootdest.org/s?aWcSLdpj) | [شراء `$2` 💎](https://m-amin-alobidan.itch.io/the-pale-beyond-arabic) |
+| **Star Wars Jedi: Fallen Order** *(حرب النجوم جيدي)* | ✅ مكتمل 100% | `11.4 MB` | [صفحة Jedi Fallen Order](https://mnova-arabic.pages.dev/games/jedi-fallen-order-arabic/) | [تحميل مجاني ⚡](https://loot-link.com/s?aMdqYdUm) | [شراء `$2` 💎](https://m-amin-alobidan.itch.io/jedi-fallen-order-arabic) |
 
 > 🎁 **باقة التوفير الشاملة (خصم 44%):** احصل على **جميع تعريبات MNOVA الـ 7 دفعة واحدة مقابل `$9.99` فقط** (بدلاً من `$18`) مع تنازل كامل عن الحقوق ← [**شراء الباقة على itch.io ↗**](https://itch.io/s/221914/mnova-complete-arabic-localization-bundle-all-7-projects)
 
@@ -56,6 +56,6 @@
 
 <div align="center">
 
-**صُنع لخدمة مجتمع اللاعبين العرب ❤️ — [MNOVA للتعريب](https://mnova-arabic.netlify.app/)**
+**صُنع لخدمة مجتمع اللاعبين العرب ❤️ — [MNOVA للتعريب](https://mnova-arabic.pages.dev/)**
 
 </div>
