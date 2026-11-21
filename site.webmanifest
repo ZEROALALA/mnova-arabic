@@ -2,7 +2,7 @@
   "name": "MNOVA | مركز تحميل تعريبات مينوفا",
   "short_name": "MNOVA للتعريب",
   "description": "موقع مينوفا للتعريب لتحميل تعريبات ألعاب PC الأونلاين والقصص ومنصة Steam باللغة العربية.",
-  "start_url": "/",
+  "start_url": "./",
   "display": "standalone",
   "background_color": "#0c101d",
   "theme_color": "#0c101d",
