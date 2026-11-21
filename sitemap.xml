@@ -148,6 +148,10 @@
       <image:loc>https://mnova-arabic.netlify.app/assets/gallery/nwtd_5.webp</image:loc>
       <image:title>واجهة القوائم والإعدادات المعرّبة بالكامل على محرك Unreal Engine 5</image:title>
     </image:image>
+    <image:image>
+      <image:loc>https://mnova-arabic.netlify.app/assets/gallery/nwtd_6.webp</image:loc>
+      <image:title>برنامج التثبيت المستقل الجديد (v1.1) بواجهة عربية احترافية وفحص SHA-256</image:title>
+    </image:image>
   </url>
   <url>
     <loc>https://mnova-arabic.netlify.app/games/jedi-fallen-order-arabic/</loc>
