@@ -51,6 +51,23 @@
       "defaultSteamSubdir": "SHUTEN ORDER"
     },
     {
+      "id": "raincode",
+      "en": "Master Detective Archives: RAIN CODE Plus",
+      "ar": "سجلات المحققين: شيفرة المطر بلس",
+      "category": "games",
+      "status": "done",
+      "priceUsd": 3,
+      "platform": "PC (Steam / Windows)",
+      "gameVersion": "Plus (UE4)",
+      "patchVersion": "1.0 كامل (حزمة IoStore Mod آمنة)",
+      "size": "55.2 MB",
+      "installerType": "bat",
+      "installerScript": "تفعيل_تعريب_Rain_Code_Plus.bat",
+      "uninstallerScript": "استعادة_الملفات_الأصلية.bat",
+      "pakRelativeDir": "RainCodePlus/Content/Paks",
+      "defaultSteamSubdir": "Master Detective Archives RAIN CODE Plus"
+    },
+    {
       "id": "exnatura",
       "en": "Ex Natura: Nature Corrupted",
       "ar": "إكس ناتورا: الطبيعة الفاسدة",

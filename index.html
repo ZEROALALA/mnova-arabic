@@ -72,7 +72,8 @@
       {"@type": "ListItem", "position": 5, "name": "تعريب لعبة Star Wars Jedi: Fallen Order (حرب النجوم جيدي) بالعربي", "url": "https://zeroalala.github.io/mnova-arabic/games/jedi-fallen-order-arabic/"},
       {"@type": "ListItem", "position": 6, "name": "تعريب لعبة The Pale Beyond (ما وراء الشحوب) بالعربي", "url": "https://zeroalala.github.io/mnova-arabic/games/the-pale-beyond-arabic/"},
       {"@type": "ListItem", "position": 7, "name": "تعريب برنامج ومنصة Steam (ستيم) باللغة العربية", "url": "https://zeroalala.github.io/mnova-arabic/games/steam-arabic/"},
-      {"@type": "ListItem", "position": 8, "name": "تعريب لعبة SHUTEN ORDER (نظام شوتين) بالعربي", "url": "https://zeroalala.github.io/mnova-arabic/games/shuten-order-arabic/"}
+      {"@type": "ListItem", "position": 8, "name": "تعريب لعبة SHUTEN ORDER (نظام شوتين) بالعربي", "url": "https://zeroalala.github.io/mnova-arabic/games/shuten-order-arabic/"},
+      {"@type": "ListItem", "position": 9, "name": "تعريب لعبة Master Detective Archives: RAIN CODE Plus (شيفرة المطر) بالعربي", "url": "https://zeroalala.github.io/mnova-arabic/games/rain-code-plus-arabic/"}
     ]
   },
   {
@@ -246,6 +247,9 @@ nav a:hover{color:var(--ac)}
 .spotlight-shuten{border-color:rgba(236,72,153,.42);background:linear-gradient(135deg,rgba(6,182,212,.08),rgba(236,72,153,.06) 55%,var(--sf))}
 .spotlight-shuten:hover{border-color:#ec4899;box-shadow:0 18px 44px rgba(236,72,153,.18)}
 .spotlight-shuten .spot-tag{background:rgba(236,72,153,.16);color:#f472b6;border:1px solid rgba(236,72,153,.4)}
+.spotlight-raincode{border-color:rgba(168,85,247,.45);background:linear-gradient(135deg,rgba(168,85,247,.10),rgba(236,72,153,.06) 55%,var(--sf))}
+.spotlight-raincode:hover{border-color:#c084fc;box-shadow:0 18px 44px rgba(168,85,247,.22)}
+.spotlight-raincode .spot-tag{background:rgba(168,85,247,.18);color:#d8b4fe;border:1px solid rgba(168,85,247,.42)}
 .spot-tag{display:inline-block;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700;margin-bottom:10px}
 .spotlight-steam .spot-tag{background:rgba(34,199,184,.15);color:var(--ac2);border:1px solid rgba(34,199,184,.3)}
 .spotlight-jedi .spot-tag{background:rgba(255,183,43,.15);color:var(--ac);border:1px solid rgba(255,183,43,.3)}
@@ -825,7 +829,14 @@ const IMGS = {
   "shuten_2": "assets/gallery/shuten_2.webp",
   "shuten_3": "assets/gallery/shuten_3.webp",
   "shuten_4": "assets/gallery/shuten_4.webp",
-  "shuten_5": "assets/gallery/shuten_5.webp"
+  "shuten_5": "assets/gallery/shuten_5.webp",
+  "raincode_cover": "assets/gallery/raincode_cover.webp",
+  "raincode_1": "assets/gallery/raincode_1.webp",
+  "raincode_2": "assets/gallery/raincode_2.webp",
+  "raincode_3": "assets/gallery/raincode_3.webp",
+  "raincode_4": "assets/gallery/raincode_4.webp",
+  "raincode_5": "assets/gallery/raincode_5.webp",
+  "raincode_6": "assets/gallery/raincode_6.webp"
 };
 
 const DEFAULT_CFG = {
@@ -1034,6 +1045,42 @@ const BASE_G = [
       "شغّل اللعبة واستمتع بقصة SHUTEN ORDER باللغة العربية الكاملة! (ولاستعادة الأصل شغّل <code>استعادة_الملفات_الأصلية.bat</code>)."
     ],
     localZip: "downloads/Minova_Shuten_Order_Arabic_v1.0.zip"
+  },
+  {
+    id: "raincode",
+    en: "Master Detective Archives: RAIN CODE Plus",
+    ar: "سجلات المحققين: شيفرة المطر بلس",
+    cat: "games",
+    s: "done",
+    p: 100,
+    plat: "PC (Steam / Windows)",
+    v: "Plus (أحدث إصدار UE4)",
+    tv: "1.0 كامل (حزمة IoStore Mod آمنة)",
+    sz: "55.2 MB",
+    d: "نوفمبر 2026",
+    tr: "فريق MNOVA للتعريب",
+    featured: true,
+    spotClass: "spotlight-raincode",
+    spotTag: "🌧️ جديد • 4K Ultra HD • تحقيق أنمي (7 صور)",
+    spotDesc: "تعريب عربي شامل للعبة التحقيق والغموض Master Detective Archives: RAIN CODE Plus: قصة يوما كوكوهيد وشينيغامي، القوائم، إعدادات الرسوميات، وقائمة المفكرة بحزمة مود آمنة.",
+    coverImg: IMGS.raincode_cover,
+    x: "تعريب عربي شامل واحترافي للعبة التحقيق والغموض الفانتازي Master Detective Archives: RAIN CODE Plus (سجلات المحققين: شيفرة المطر بلس) من فريق MNOVA للتعريب. يشمل التعريب القائمة الرئيسية، القصص الجانبية، المعرض، إعدادات الرسوميات والصوت والتحكم، قائمة المفكرة، وحوارات المحقق يوما كوكوهيد وشينيغامي على قطار أماتيراسو وفي مقاطعة كاناي ضمن حزمة Unreal Engine IoStore Mod نظيفة (55.2 MB) لا تعدّل أي ملف أصلي.",
+    images: [
+      { title: "الغلاف الفني بدقة 4K Ultra HD — Master Detective Archives: RAIN CODE Plus", src: IMGS.raincode_cover },
+      { title: "القائمة الرئيسية المعرّبة بالكامل في شوارع مقاطعة كاناي الممطرة", src: IMGS.raincode_1 },
+      { title: "قائمة إعدادات الرسوميات والصوت والتحكم المعرّبة بالكامل", src: IMGS.raincode_2 },
+      { title: "حوارات القصة وإعلانات قطار أماتيراسو السريع باللغة العربية", src: IMGS.raincode_3 },
+      { title: "تحقيقات المحقق يوما كوكوهيد داخل عربات القطار بالعربي", src: IMGS.raincode_4 },
+      { title: "قائمة المفكرة وشرح التحقيقات مع شينيغامي باللغة العربية", src: IMGS.raincode_5 },
+      { title: "مشاهد الاستكشاف والحوارات المباشرة بخط عربي واضح وسلس", src: IMGS.raincode_6 }
+    ],
+    steps: [
+      "حمّل حزمة <code>Minova_Rain_Code_Plus_Arabic_v1.0.zip</code> (55.2 MB) وفك الضغط عنها بالكامل، وتأكد من إغلاق اللعبة.",
+      "شغّل ملف <code>تفعيل_تعريب_Rain_Code_Plus.bat</code> — يكتشف مجلد اللعبة تلقائياً (أو يتيح لك لصق المسار الذي يحتوي <code>RainCodePlus.exe</code>).",
+      "يقوم المثبّت بنسخ ملفات المود الثلاثة <code>pakchunk0-WindowsNoEditor_99_P</code> إلى <code>RainCodePlus\\Content\\Paks</code> دون تعديل أي ملف أصلي.",
+      "شغّل اللعبة واستمتع بقصة شيفرة المطر بالعربية الكاملة! (ولإزالة التعريب شغّل <code>استعادة_الملفات_الأصلية.bat</code>)."
+    ],
+    localZip: "downloads/Minova_Rain_Code_Plus_Arabic_v1.0.zip"
   },
   {
     id: "exnatura",
