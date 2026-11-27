@@ -71,7 +71,8 @@
       {"@type": "ListItem", "position": 4, "name": "تعريب لعبة Nobody Wants to Die (لا أحد يريد أن يموت) بالعربي", "url": "https://zeroalala.github.io/mnova-arabic/games/nobody-wants-to-die-arabic/"},
       {"@type": "ListItem", "position": 5, "name": "تعريب لعبة Star Wars Jedi: Fallen Order (حرب النجوم جيدي) بالعربي", "url": "https://zeroalala.github.io/mnova-arabic/games/jedi-fallen-order-arabic/"},
       {"@type": "ListItem", "position": 6, "name": "تعريب لعبة The Pale Beyond (ما وراء الشحوب) بالعربي", "url": "https://zeroalala.github.io/mnova-arabic/games/the-pale-beyond-arabic/"},
-      {"@type": "ListItem", "position": 7, "name": "تعريب برنامج ومنصة Steam (ستيم) باللغة العربية", "url": "https://zeroalala.github.io/mnova-arabic/games/steam-arabic/"}
+      {"@type": "ListItem", "position": 7, "name": "تعريب برنامج ومنصة Steam (ستيم) باللغة العربية", "url": "https://zeroalala.github.io/mnova-arabic/games/steam-arabic/"},
+      {"@type": "ListItem", "position": 8, "name": "تعريب لعبة SHUTEN ORDER (نظام شوتين) بالعربي", "url": "https://zeroalala.github.io/mnova-arabic/games/shuten-order-arabic/"}
     ]
   },
   {
@@ -242,6 +243,9 @@ nav a:hover{color:var(--ac)}
 .spotlight-mongil{border-color:rgba(56,189,248,.4);background:linear-gradient(135deg,rgba(56,189,248,.07),rgba(255,183,43,.04) 55%,var(--sf))}
 .spotlight-mongil:hover{border-color:#38bdf8;box-shadow:0 18px 44px rgba(56,189,248,.16)}
 .spotlight-mongil .spot-tag{background:rgba(56,189,248,.16);color:#38bdf8;border:1px solid rgba(56,189,248,.38)}
+.spotlight-shuten{border-color:rgba(236,72,153,.42);background:linear-gradient(135deg,rgba(6,182,212,.08),rgba(236,72,153,.06) 55%,var(--sf))}
+.spotlight-shuten:hover{border-color:#ec4899;box-shadow:0 18px 44px rgba(236,72,153,.18)}
+.spotlight-shuten .spot-tag{background:rgba(236,72,153,.16);color:#f472b6;border:1px solid rgba(236,72,153,.4)}
 .spot-tag{display:inline-block;padding:4px 12px;border-radius:20px;font-size:12px;font-weight:700;margin-bottom:10px}
 .spotlight-steam .spot-tag{background:rgba(34,199,184,.15);color:var(--ac2);border:1px solid rgba(34,199,184,.3)}
 .spotlight-jedi .spot-tag{background:rgba(255,183,43,.15);color:var(--ac);border:1px solid rgba(255,183,43,.3)}
@@ -815,7 +819,13 @@ const IMGS = {
   "mongil_5": "assets/gallery/mongil_5.webp",
   "mongil_6": "assets/gallery/mongil_6.webp",
   "mongil_7": "assets/gallery/mongil_7.webp",
-  "nwtd_6": "assets/gallery/nwtd_6.webp"
+  "nwtd_6": "assets/gallery/nwtd_6.webp",
+  "shuten_cover": "assets/gallery/shuten_cover.webp",
+  "shuten_1": "assets/gallery/shuten_1.webp",
+  "shuten_2": "assets/gallery/shuten_2.webp",
+  "shuten_3": "assets/gallery/shuten_3.webp",
+  "shuten_4": "assets/gallery/shuten_4.webp",
+  "shuten_5": "assets/gallery/shuten_5.webp"
 };
 
 const DEFAULT_CFG = {
@@ -989,6 +999,41 @@ const BASE_G = [
     ],
     youtubeVideoUrl: "https://www.youtube.com/watch?v=x5m5WtSpBgA",
     localZip: "downloads/Minova_Mongil_Star_Dive_Arabic_v1.0.zip"
+  },
+  {
+    id: "shuten",
+    en: "SHUTEN ORDER",
+    ar: "نظام شوتين (تحقيق وغموض أنمي)",
+    cat: "games",
+    s: "done",
+    p: 100,
+    plat: "PC (Steam / Windows)",
+    v: "أحدث إصدار (Unity)",
+    tv: "1.0 كامل (266 حزمة معرّبة + خطوط SDF)",
+    sz: "709.9 MB",
+    d: "نوفمبر 2026",
+    tr: "فريق MNOVA للتعريب",
+    featured: true,
+    spotClass: "spotlight-shuten",
+    spotTag: "🕵️ جديد • 4K Ultra HD • غموض وأنمي (6 صور)",
+    spotDesc: "تعريب عربي شامل للعبة التحقيق والغموض اليابانية SHUTEN ORDER (نظام شوتين): القصة والحوارات، القوائم والإعدادات، وواجهات الاستكشاف بـ 266 حزمة وخطوط عربية واضحة.",
+    coverImg: IMGS.shuten_cover,
+    x: "تعريب عربي شامل ومتقن للعبة الغموض والتحقيق والأنمي SHUTEN ORDER (نظام شوتين) من فريق MNOVA للتعريب. يشمل التعريب القائمة الرئيسية، كافة قوائم الإعدادات (النظام، الشاشة، الصوت)، حوارات القصة وفقاعات المحادثة، وواجهات الاستكشاف والأيام، مع دمج خطوط عربية SDF واضحة في 266 حزمة Unity Addressables ومثبّت تلقائي آمن يحفظ نسخة احتياطية كاملة قبل التثبيت.",
+    images: [
+      { title: "الغلاف الفني بدقة 4K Ultra HD — SHUTEN ORDER (نظام شوتين)", src: IMGS.shuten_cover },
+      { title: "القائمة الرئيسية المعرّبة بالكامل للعبة SHUTEN ORDER", src: IMGS.shuten_1 },
+      { title: "قوائم الإعدادات (النظام، الشاشة، الصوت، سرعة عرض النص) باللغة العربية", src: IMGS.shuten_2 },
+      { title: "فقاعات الحوار القصصي داخل الفندق بخط عربي واضح وسليم", src: IMGS.shuten_3 },
+      { title: "محادثات الشخصيات والتحقيق في طابق كبار الشخصيات بالعربية", src: IMGS.shuten_4 },
+      { title: "واجهات الاستكشاف والأيام المتبقية والتفاعل مع المشاهد بالعربي", src: IMGS.shuten_5 }
+    ],
+    steps: [
+      "حمّل حزمة <code>Minova_Shuten_Order_Arabic_v1.0.zip</code> (709.9 MB) وفك الضغط عنها بالكامل، وتأكد من إغلاق اللعبة.",
+      "شغّل ملف <code>تفعيل_تعريب_Shuten_Order.bat</code> — يتعرف تلقائياً على مجلد اللعبة (أو يتيح لك لصق المسار الذي يحتوي <code>Shuten.exe</code>).",
+      "سيحفظ المثبّت نسخة احتياطية آمنة للملفات الأصلية داخل <code>.mnova_shuten_orig_bak</code> ثم يثبّت جميع الحزم المعرّبة الـ 266 والخطوط العربية.",
+      "شغّل اللعبة واستمتع بقصة SHUTEN ORDER باللغة العربية الكاملة! (ولاستعادة الأصل شغّل <code>استعادة_الملفات_الأصلية.bat</code>)."
+    ],
+    localZip: "downloads/Minova_Shuten_Order_Arabic_v1.0.zip"
   },
   {
     id: "exnatura",

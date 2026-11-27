@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://zeroalala.github.io/mnova-arabic/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -13,7 +13,7 @@
   </url>
   <url>
     <loc>https://zeroalala.github.io/mnova-arabic/games/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.95</priority>
     <image:image>
@@ -23,7 +23,7 @@
   </url>
   <url>
     <loc>https://zeroalala.github.io/mnova-arabic/games/naraka-bladepoint-arabic/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -53,7 +53,7 @@
   </url>
   <url>
     <loc>https://zeroalala.github.io/mnova-arabic/games/mongil-star-dive-arabic/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -91,7 +91,7 @@
   </url>
   <url>
     <loc>https://zeroalala.github.io/mnova-arabic/games/ex-natura-arabic/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -120,8 +120,38 @@
     </image:image>
   </url>
   <url>
+    <loc>https://zeroalala.github.io/mnova-arabic/games/shuten-order-arabic/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://zeroalala.github.io/mnova-arabic/assets/covers/shuten.jpg</image:loc>
+      <image:title>تعريب لعبة SHUTEN ORDER (نظام شوتين) بالعربي 100% | MNOVA للتعريب</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zeroalala.github.io/mnova-arabic/assets/gallery/shuten_1.webp</image:loc>
+      <image:title>القائمة الرئيسية المعرّبة بالكامل للعبة SHUTEN ORDER</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zeroalala.github.io/mnova-arabic/assets/gallery/shuten_2.webp</image:loc>
+      <image:title>قوائم الإعدادات (النظام، الشاشة، الصوت، سرعة النص) بالعربية</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zeroalala.github.io/mnova-arabic/assets/gallery/shuten_3.webp</image:loc>
+      <image:title>حوارات القصة وفقاعات المحادثة بخط عربي واضح داخل الفندق</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zeroalala.github.io/mnova-arabic/assets/gallery/shuten_4.webp</image:loc>
+      <image:title>محادثات الشخصيات والتحقيق في منطقة كبار الشخصيات بالعربي</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://zeroalala.github.io/mnova-arabic/assets/gallery/shuten_5.webp</image:loc>
+      <image:title>واجهات الاستكشاف والأيام المتبقية والتفاعل باللغة العربية</image:title>
+    </image:image>
+  </url>
+  <url>
     <loc>https://zeroalala.github.io/mnova-arabic/games/nobody-wants-to-die-arabic/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -155,7 +185,7 @@
   </url>
   <url>
     <loc>https://zeroalala.github.io/mnova-arabic/games/jedi-fallen-order-arabic/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -181,7 +211,7 @@
   </url>
   <url>
     <loc>https://zeroalala.github.io/mnova-arabic/games/the-pale-beyond-arabic/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
@@ -207,7 +237,7 @@
   </url>
   <url>
     <loc>https://zeroalala.github.io/mnova-arabic/games/steam-arabic/</loc>
-    <lastmod>2026-11-21</lastmod>
+    <lastmod>2026-11-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>

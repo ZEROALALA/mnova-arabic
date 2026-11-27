@@ -2,7 +2,7 @@
   "schemaVersion": "1.0",
   "provider": "MNOVA Localization Hub",
   "configUrl": "config.json",
-  "updatedAt": "2026-11-21",
+  "updatedAt": "2026-11-27",
   "items": [
     {
       "id": "naraka",
@@ -33,6 +33,22 @@
       "installerType": "exe",
       "installerScript": "تفعيل_تعريب_MONGIL_STAR_DIVE.exe",
       "defaultNetmarbleSubdir": "STARDIVEE"
+    },
+    {
+      "id": "shuten",
+      "en": "SHUTEN ORDER",
+      "ar": "نظام شوتين (تحقيق وغموض أنمي)",
+      "category": "games",
+      "status": "done",
+      "priceUsd": 2,
+      "platform": "PC (Steam / Windows)",
+      "gameVersion": "Latest (Unity)",
+      "patchVersion": "1.0 كامل (266 حزمة معرّبة + خطوط SDF)",
+      "size": "709.9 MB",
+      "installerType": "bat",
+      "installerScript": "تفعيل_تعريب_Shuten_Order.bat",
+      "uninstallerScript": "استعادة_الملفات_الأصلية.bat",
+      "defaultSteamSubdir": "SHUTEN ORDER"
     },
     {
       "id": "exnatura",
